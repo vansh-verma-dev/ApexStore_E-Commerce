@@ -9,7 +9,7 @@ function Navbar() {
             id="Navbar"
         >
 
-            {/* Logo */}
+            
             <div className="logo" id="logo">
                 <h1 className="text-2xl font-bold cursor-pointer tracking-wide">
                     ApexStore
@@ -76,7 +76,7 @@ function Navbar() {
                 id="navbtn"
             >
 
-                <a href="#">
+                <a href="#" >
                     <button
                         className="CartBtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
                     >
