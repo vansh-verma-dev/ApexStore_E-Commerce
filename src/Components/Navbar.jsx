@@ -9,11 +9,11 @@ function Navbar() {
             id="Navbar"
         >
 
-            
+
             <div className="logo" id="logo">
-                <h1 className="text-2xl font-bold cursor-pointer tracking-wide">
-                    ApexStore
-                </h1>
+                <img src="./logo.png" alt=""
+                className="h-15"
+                />
             </div>
 
             <div
@@ -72,13 +72,14 @@ function Navbar() {
 
 
             <div
-                className="navbtn flex items-center gap-4 text-[20px]"
+                className="navbtn sm:flex   items-center gap-4 text-[20px]    "
                 id="navbtn"
             >
 
                 <a href="#" >
-                    <button
-                        className="CartBtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
+                    <button 
+                        className="CartBtn w-[45px] h-[45px] rounded-full border border-zinc-300 sm:flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer 
+                        hidden"
                     >
                         <FaCartShopping />
                     </button>
@@ -87,7 +88,7 @@ function Navbar() {
 
                 <a href="#">
                     <button
-                        className="wishlistbtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center hover:bg-red-500 hover:text-white transition-all duration-300 cursor-pointer"
+                        className="wishlistbtn w-[45px] h-[45px] rounded-full border border-zinc-300 sm:flex items-center justify-center hover:bg-red-500 hover:text-white transition-all duration-300 cursor-pointer hidden"
                     >
                         <FaHeart />
                     </button>
