@@ -38,9 +38,9 @@ const shoeCategories = [
 
 function CategorySection() {
   return (
-    <section className=" ctegory_section w-full mt-10 py-6 h-auto  ">
+    <section className=" ctegory_section  w-full mt-0  py-6 h-auto  bg-white ">
       
-      <div className="flex gap-4 overflow-x-auto px-4 scrollbar-hide justify-center ">
+      <div className="flex gap-4 bg-white overflow-x-auto px-4 scrollbar-hide justify-center  overflow-y-hidden "> 
 
         {shoeCategories.map((cat) => (
           <div
