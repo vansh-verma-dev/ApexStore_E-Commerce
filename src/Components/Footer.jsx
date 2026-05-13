@@ -1,95 +1,207 @@
-import { FaInstagram, FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
+import React from "react";
 
-function Footersection() {
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+
+function Footer() {
   return (
-    <footer className="w-full bg-white border-t border-gray-200 mt-16">
-      
-      <div className="w-full max-w-[1200px] mx-auto px-6 py-16">
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+    <footer className="bg-[#020617] text-white border-t border-white/10">
 
-          {/* Logo Section */}
-          <div className="lg:col-span-2 flex flex-col gap-5">
-            
-            <img
-              src="./logo.png"
-              alt="Logo"
-              className="h-10 w-auto"
-            />
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16">
 
-            <p className="text-gray-500 max-w-sm leading-relaxed">
-              Making the world a better place through constructing elegant hierarchies.
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+          {/* LOGO & ABOUT */}
+          <div>
+            <h1 className="text-3xl font-bold">
+              Apex<span className="text-indigo-500">Store</span>
+            </h1>
+
+            <p className="text-slate-400 mt-5 leading-relaxed text-sm">
+              Discover premium fashion, trending gadgets,
+              and top-quality accessories at affordable prices.
             </p>
 
-            <div className="flex gap-5 pt-2">
-              <FaInstagram className="text-gray-400 hover:text-pink-600 text-xl cursor-pointer" />
-              <FaFacebook className="text-gray-400 hover:text-blue-500 text-xl cursor-pointer" />
-              <FaTwitter className="text-gray-400 hover:text-sky-500 text-xl cursor-pointer" />
-              <FaGithub className="text-gray-400 hover:text-gray-900 text-xl cursor-pointer" />
+            {/* SOCIAL ICONS */}
+            <div className="flex items-center gap-4 mt-6">
+
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-indigo-500 transition-all duration-300"
+              >
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500 transition-all duration-300"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-sky-500 transition-all duration-300"
+              >
+                <FaTwitter />
+              </a>
+
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-red-500 transition-all duration-300"
+              >
+                <FaYoutube />
+              </a>
+
             </div>
-
           </div>
 
-          {/* Solutions */}
+          {/* SHOP LINKS */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-              Solutions
-            </h3>
-            <ul className="mt-5 space-y-3">
-              {["Marketing", "Analytics", "Automation", "Commerce", "Insights"].map((item) => (
-                <li key={item}>
-                  <a className="text-gray-600 hover:text-black transition">
-                    {item}
-                  </a>
-                </li>
-              ))}
+            <h2 className="text-xl font-semibold mb-5">
+              Shop
+            </h2>
+
+            <ul className="space-y-3 text-slate-400 text-sm">
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Men Fashion
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Women Fashion
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Electronics
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Accessories
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  New Arrivals
+                </a>
+              </li>
+
             </ul>
           </div>
 
-          {/* Support */}
+          {/* SUPPORT */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+            <h2 className="text-xl font-semibold mb-5">
               Support
-            </h3>
-            <ul className="mt-5 space-y-3">
-              {["Submit ticket", "Documentation", "Guides"].map((item) => (
-                <li key={item}>
-                  <a className="text-gray-600 hover:text-black transition">
-                    {item}
-                  </a>
-                </li>
-              ))}
+            </h2>
+
+            <ul className="space-y-3 text-slate-400 text-sm">
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Contact Us
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  FAQs
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Shipping Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Return Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  Privacy Policy
+                </a>
+              </li>
+
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* NEWSLETTER */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-              Legal
-            </h3>
-            <ul className="mt-5 space-y-3">
-              {["Terms of service", "Privacy policy", "License"].map((item) => (
-                <li key={item}>
-                  <a className="text-gray-600 hover:text-black transition">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <h2 className="text-xl font-semibold mb-5">
+              Newsletter
+            </h2>
+
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Subscribe to get updates about new products,
+              offers and exclusive deals.
+            </p>
+
+            <form className="mt-5 flex flex-col gap-4">
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm outline-none focus:border-indigo-500"
+              />
+
+              <button
+                className="bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 py-3 rounded-xl text-sm font-medium"
+              >
+                Subscribe Now
+              </button>
+
+            </form>
           </div>
 
         </div>
-
-        {/* Bottom bar */}
-        <div className="mt-12 border-t border-gray-100 pt-6 text-center">
-          <p className="text-sm text-gray-400">
-            © 2024 Apex Store. All rights reserved.
-          </p>
-        </div>
-
       </div>
+
+      {/* BOTTOM */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+          <p className="text-slate-500 text-sm text-center sm:text-left">
+            © 2026 Apex Store. All Rights Reserved.
+          </p>
+
+          <div className="flex items-center gap-5 text-sm text-slate-400">
+
+            <a href="#" className="hover:text-indigo-400 transition">
+              Terms
+            </a>
+
+            <a href="#" className="hover:text-indigo-400 transition">
+              Privacy
+            </a>
+
+            <a href="#" className="hover:text-indigo-400 transition">
+              Cookies
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
     </footer>
   );
 }
 
-export default Footersection;
+export default Footer;

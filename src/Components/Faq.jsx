@@ -45,7 +45,7 @@ function FAQ() {
     <section className="w-full bg-[#020617] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
 
-        {/* Heading */}
+    
         <div className="text-center mb-14">
           <span className="bg-indigo-500/10 text-indigo-400 px-4 py-1 rounded-full text-sm font-medium border border-indigo-500/20">
             FAQ
@@ -53,7 +53,7 @@ function FAQ() {
 
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-6 leading-tight">
             Questions? <br />
-            We’ve Got Answers.
+            We've Got Answers.
           </h2>
 
           <p className="text-slate-400 mt-5 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
@@ -62,7 +62,7 @@ function FAQ() {
           </p>
         </div>
 
-        {/* FAQ BOX */}
+    
         <div className="space-y-5">
           {faqs.map((faq, index) => (
             <div
@@ -74,7 +74,7 @@ function FAQ() {
                   : "bg-white/5 border-white/10 hover:border-indigo-400/30"
               }`}
             >
-              {/* Question */}
+      
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex items-center justify-between gap-4 text-left p-6 sm:p-7"
@@ -95,7 +95,7 @@ function FAQ() {
                 </div>
               </button>
 
-              {/* Answer */}
+         
               <div
                 className={`grid transition-all duration-300 ease-in-out
                 ${
@@ -113,9 +113,6 @@ function FAQ() {
             </div>
           ))}
         </div>
-
-       
-
       </div>
     </section>
   );
