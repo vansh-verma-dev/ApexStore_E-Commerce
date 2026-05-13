@@ -10,7 +10,7 @@ function Navbar() {
         >
 
 
-            <a href="#Navbar">
+            <a href="#HomePage">
                 <div className="logo" id="logo">
                     <img src="./logo.png" alt=""
                         className="h-15"
@@ -28,7 +28,7 @@ function Navbar() {
                             href="#Navbar"
                             className="hover:text-purple-600 transition-all duration-300"
                         >
-                            Home
+                            Homepage
                         </a>
                     </li>
 
