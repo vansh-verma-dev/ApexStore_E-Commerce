@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 const images = [
     {
         id: "1",
-        images: "https://i.pinimg.com/1200x/d2/df/1e/d2df1ea12c596b86317e0b47f44ea27c.jpg"
+        images: "https://i.pinimg.com/1200x/95/b4/fb/95b4fb0657d2839f48ff9196729abda0.jpg"
     },
     {
         id: "2",
-        images: "https://i.pinimg.com/1200x/4e/3e/d1/4e3ed1555d1c546f923e3aba24083f3d.jpg"
+        images: "https://i.pinimg.com/1200x/46/7b/4f/467b4fb2447d6a851a4a9d02c27626e2.jpg"
     }, {
         id: "3",
-        images: "https://i.pinimg.com/1200x/38/ed/86/38ed8643f788ed7205927a4b10bcada9.jpg"
+        images: "https://i.pinimg.com/1200x/f6/ab/2d/f6ab2dc49b5faeaffb7a445d59d2c065.jpg"
     }
 ]
 

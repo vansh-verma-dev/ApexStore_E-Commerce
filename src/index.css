@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 * {
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box;
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    overflow-y: hidden;
 }
 
 .Navbar {
     padding-left: 30px;
     padding-right: 30px;
+}
+.ctegory_section{
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+footer{
+    padding-top: 60px;
+    margin-top: 10px;
 }
 
 @media (max-width: 420px) {

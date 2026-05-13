@@ -1,3 +1,6 @@
+import CategorySection from "./Components/Category";
+import FAQ from "./Components/Faq";
+import Footer from "./Components/Footer";
 import HeroSection from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 
@@ -6,6 +9,9 @@ import Navbar from "./Components/Navbar";
     <>
    <Navbar/>
    <HeroSection/>
+   <CategorySection/>
+   <FAQ/>
+   <Footer/>
     </>
   )
  }
