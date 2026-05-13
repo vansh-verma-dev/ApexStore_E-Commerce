@@ -9,7 +9,7 @@ function Product() {
         AOS.init();
     }, []);
     return (
-        <div className="product_section w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10 bg-gray-100 overflow-hidden" >
+        <div className="product_section w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10 bg-gray-100 overflow-hidden" id="Product" >
 
             {shoesData.map((item) => (
 

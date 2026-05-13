@@ -25,7 +25,7 @@ useEffect(()=>{
 },[]);
 
     return (
-        <section className="hero_section w-[90vw] h-[20vh]  sm:w-full  rounded-2xl sm:m-0 sm:rounded-none  overflow-hidden bg-red-600 sm:h-[80vh]">
+        <section id="HomePage" className="hero_section w-[90vw] h-[20vh]  sm:w-full  rounded-2xl sm:m-0 sm:rounded-none  overflow-hidden bg-red-600 sm:h-[80vh]">
             <img src={images[current].images} alt=""
                 className="h-full w-full"
             />

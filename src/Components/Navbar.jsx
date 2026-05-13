@@ -10,11 +10,12 @@ function Navbar() {
         >
 
 
-            <div className="logo" id="logo">
-                <img src="./logo.png" alt=""
-                className="h-15"
-                />
-            </div>
+            <a href="#Navbar">
+                <div className="logo" id="logo">
+                    <img src="./logo.png" alt=""
+                        className="h-15"
+                    />
+                </div></a>
 
             <div
                 className="navLinks hidden lg:block"
@@ -24,7 +25,7 @@ function Navbar() {
 
                     <li>
                         <a
-                            href="#"
+                            href="#Navbar"
                             className="hover:text-purple-600 transition-all duration-300"
                         >
                             Home
@@ -33,7 +34,7 @@ function Navbar() {
 
                     <li>
                         <a
-                            href="#"
+                            href="#Product"
                             className="hover:text-purple-600 transition-all duration-300"
                         >
                             Shop
@@ -51,7 +52,7 @@ function Navbar() {
 
                     <li>
                         <a
-                            href="#"
+                            href="#About"
                             className="hover:text-purple-600 transition-all duration-300"
                         >
                             About
@@ -77,7 +78,7 @@ function Navbar() {
             >
 
                 <a href="#" >
-                    <button 
+                    <button
                         className="CartBtn w-[45px] h-[45px] rounded-full border border-zinc-300 sm:flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer 
                         hidden"
                     >
