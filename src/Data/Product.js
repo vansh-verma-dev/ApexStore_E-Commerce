@@ -5,16 +5,16 @@ const shoesData = [
     brand: "Nike",
     name: "Nike Air Max Pulse",
     price: 12999,
-    category: "Running",
+    rating: 4.8,
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+       "https://i.pinimg.com/1200x/8b/3b/fa/8b3bfaf6d9a9ad6cc09c45f3d1b06395.jpg",
   },
   {
     id: 2,
     brand: "Nike",
     name: "Nike Revolution 7",
     price: 5999,
-    category: "Sports",
+    rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
   },
@@ -23,7 +23,7 @@ const shoesData = [
     brand: "Nike",
     name: "Nike Dunk Low",
     price: 8999,
-    category: "Casual",
+    rating: 4.7,
     image:
       "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
   },
@@ -32,7 +32,7 @@ const shoesData = [
     brand: "Nike",
     name: "Nike Zoom Fly",
     price: 14999,
-    category: "Running",
+    rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
   },
@@ -43,7 +43,7 @@ const shoesData = [
     brand: "Puma",
     name: "Puma RS-X",
     price: 7999,
-    category: "Sneakers",
+    rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
   },
@@ -52,7 +52,7 @@ const shoesData = [
     brand: "Puma",
     name: "Puma Velocity Nitro",
     price: 9999,
-    category: "Running",
+    rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1608667508764-33cf0726b13a",
   },
@@ -61,7 +61,7 @@ const shoesData = [
     brand: "Puma",
     name: "Puma Smash V2",
     price: 4999,
-    category: "Casual",
+    rating: 4.3,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
   },
@@ -70,7 +70,7 @@ const shoesData = [
     brand: "Puma",
     name: "Puma Future Rider",
     price: 6999,
-    category: "Lifestyle",
+    rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
   },
@@ -81,7 +81,7 @@ const shoesData = [
     brand: "Adidas",
     name: "Adidas Ultraboost",
     price: 15999,
-    category: "Running",
+    rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
   },
@@ -90,7 +90,7 @@ const shoesData = [
     brand: "Adidas",
     name: "Adidas Superstar",
     price: 8999,
-    category: "Casual",
+    rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
   },
@@ -99,7 +99,7 @@ const shoesData = [
     brand: "Adidas",
     name: "Adidas NMD R1",
     price: 13999,
-    category: "Sneakers",
+    rating: 4.8,
     image:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772",
   },
@@ -108,7 +108,7 @@ const shoesData = [
     brand: "Adidas",
     name: "Adidas Run Falcon",
     price: 5999,
-    category: "Sports",
+    rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
   },
@@ -119,7 +119,7 @@ const shoesData = [
     brand: "Campus",
     name: "Campus Oxyfit",
     price: 2499,
-    category: "Running",
+    rating: 4.2,
     image:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2",
   },
@@ -128,7 +128,7 @@ const shoesData = [
     brand: "Campus",
     name: "Campus North Plus",
     price: 1999,
-    category: "Casual",
+    rating: 4.1,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
   },
@@ -137,7 +137,7 @@ const shoesData = [
     brand: "Campus",
     name: "Campus Camp Zane",
     price: 2299,
-    category: "Sports",
+    rating: 4.3,
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
   },
@@ -146,7 +146,7 @@ const shoesData = [
     brand: "Campus",
     name: "Campus Terminator",
     price: 2799,
-    category: "Sneakers",
+    rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
   },
@@ -157,7 +157,7 @@ const shoesData = [
     brand: "Red Tape",
     name: "Red Tape Athleisure",
     price: 3499,
-    category: "Casual",
+    rating: 4.2,
     image:
       "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
   },
@@ -166,7 +166,7 @@ const shoesData = [
     brand: "Red Tape",
     name: "Red Tape Sports Knit",
     price: 3999,
-    category: "Sports",
+    rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
   },
@@ -175,7 +175,7 @@ const shoesData = [
     brand: "Red Tape",
     name: "Red Tape Walking Pro",
     price: 2999,
-    category: "Walking",
+    rating: 4.1,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
   },
@@ -184,7 +184,7 @@ const shoesData = [
     brand: "Red Tape",
     name: "Red Tape Street Style",
     price: 4599,
-    category: "Sneakers",
+    rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
   },
@@ -195,7 +195,7 @@ const shoesData = [
     brand: "New Balance",
     name: "NB 574 Classic",
     price: 8999,
-    category: "Lifestyle",
+    rating: 4.7,
     image:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772",
   },
@@ -204,7 +204,7 @@ const shoesData = [
     brand: "New Balance",
     name: "NB Fresh Foam",
     price: 11999,
-    category: "Running",
+    rating: 4.8,
     image:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2",
   },
@@ -213,7 +213,7 @@ const shoesData = [
     brand: "New Balance",
     name: "NB 327",
     price: 9999,
-    category: "Sneakers",
+    rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
   },
@@ -222,7 +222,7 @@ const shoesData = [
     brand: "New Balance",
     name: "NB FuelCell",
     price: 13999,
-    category: "Sports",
+    rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
   },
@@ -233,7 +233,7 @@ const shoesData = [
     brand: "Skechers",
     name: "Skechers Go Walk",
     price: 4999,
-    category: "Walking",
+    rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608667508764-33cf0726b13a",
   },
@@ -242,7 +242,7 @@ const shoesData = [
     brand: "Skechers",
     name: "Skechers Arch Fit",
     price: 6999,
-    category: "Comfort",
+    rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
   },
@@ -251,7 +251,7 @@ const shoesData = [
     brand: "Skechers",
     name: "Skechers Max Cushion",
     price: 8499,
-    category: "Running",
+    rating: 4.7,
     image:
       "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
   },
@@ -260,7 +260,7 @@ const shoesData = [
     brand: "Skechers",
     name: "Skechers Street Wear",
     price: 5499,
-    category: "Casual",
+    rating: 4.3,
     image:
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
   },
