@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import shoesData from "../data/Product.js";
+import shoesData from "../Data/Product.js";
 import { FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
