@@ -3,6 +3,7 @@ import shoesData from "../Data/Product.js";
 import { FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function Product() {
     useEffect(() => {
@@ -51,6 +52,7 @@ function Product() {
 
                         </div>
 
+                        
                         <button className="w-full mt-4 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition">
                             Add To Cart
                         </button>

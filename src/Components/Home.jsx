@@ -5,6 +5,7 @@ import HeroSection from "../Components/Hero";
 import MobileNav from "../Components/MobileNav";
 import Navbar from "../Components/Navbar";
 import Product from "../Components/Product";
+import WhyChooseUs from "./WhyChooseUs";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MobileNav />
       <CategorySection />
       <Product />
+      <WhyChooseUs/>
       <FAQ />
       <Footer />
     </>
