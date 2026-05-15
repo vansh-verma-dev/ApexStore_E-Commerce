@@ -1,35 +1,48 @@
-import { useEffect, useState } from "react";
-
-const images = [
-    {
-        id: "1",
-        images: "https://i.pinimg.com/1200x/95/b4/fb/95b4fb0657d2839f48ff9196729abda0.jpg"
-    },
-    {
-        id: "2",
-        images: "https://i.pinimg.com/1200x/46/7b/4f/467b4fb2447d6a851a4a9d02c27626e2.jpg"
-    }, {
-        id: "3",
-        images: "https://i.pinimg.com/1200x/f6/ab/2d/f6ab2dc49b5faeaffb7a445d59d2c065.jpg"
-    }
-]
 
 function HeroSection() {
-    const [current, setCurrent] = useState(2);
-useEffect(()=>{
-    const slider = setInterval(() => {
-        setCurrent((prev)=>(prev + 1)% images.length)
-    }, 3000);
-
-    return()=> clearInterval(slider);
-},[]);
-
     return (
-        <section id="HomePage" className="hero_section w-[90vw] h-[20vh]  sm:w-full  rounded-2xl sm:m-0 sm:rounded-none  overflow-hidden bg-red-600 sm:h-[80vh]">
-            <img src={images[current].images} alt=""
-                className="h-full w-full"
-            />
-        </section>
+ <section className="relative h-[25vh] w-[90%] ml-2.5 mt-2.5  sm:m-0  sm:rounded-none rounded-2xl sm:h-[80vh] sm:w-full overflow-hidden">
+
+ 
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/Hero-video.mp4" type="video/mp4" />
+  </video>
+  <div className="absolute inset-0 bg-black/50"></div>
+
+ <div className="relative z-10 hidden sm:flex flex-col items-center justify-center h-full text-center px-5">
+
+ 
+  <p className="uppercase tracking-[8px] text-gray-300 text-sm font-medium mb-5">
+    Premium Sneaker Collection
+  </p>
+
+ 
+  <h1 className="text-white text-6xl md:text-8xl font-black leading-[0.9] drop-shadow-2xl">
+    WEAR THE <br />
+
+    <span className="bg-gradient-to-r from-cyan-400 via-white to-pink-500 bg-clip-text text-transparent">
+      FUTURE
+    </span>
+  </h1>
+
+ 
+  <p className="text-gray-300 mt-8 max-w-2xl text-lg leading-8">
+    Discover futuristic sneakers crafted for comfort,
+    street fashion, and unmatched performance.
+    Elevate your style with every step.
+  </p>
+
+  
+
+</div>
+
+</section>
     )
 }
 export default HeroSection;
