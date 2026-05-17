@@ -1,6 +1,7 @@
 import { IoSearch } from "react-icons/io5";
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -24,12 +25,12 @@ function Navbar() {
                 <ul className="flex items-center gap-8 font-medium">
 
                     <li>
-                        <a
-                            href="#Navbar"
+                        <Link
+                            to="/"
                             className="hover:text-purple-600 transition-all duration-300"
                         >
-                            Homepage
-                        </a>
+                            Home
+                        </Link>
                     </li>
 
                     <li>
@@ -95,14 +96,13 @@ function Navbar() {
                     </button>
                 </a>
 
-
-                <a href="#">
+                <Link to="/profile">
                     <button
-                        className="ProfileBtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center  hover:bg-black  hover:text-white transition-all duration-300 cursor-pointer"
+                        className="ProfileBtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
                     >
                         <CgProfile />
                     </button>
-                </a>
+                </Link>
 
             </div>
 
