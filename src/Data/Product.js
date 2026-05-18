@@ -4,6 +4,7 @@ const shoesData = [
     id: 1,
     brand: "Nike",
     name: "Nike Air Max Pulse",
+    tagline: "Style Meets Performance",
     price: 12999,
     oldPrice: 14399,
     discount: 30,
