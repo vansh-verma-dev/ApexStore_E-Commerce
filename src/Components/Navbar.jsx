@@ -1,7 +1,9 @@
 import { IoSearch } from "react-icons/io5";
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
+import { IoSearchOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { div } from "framer-motion/client";
 
 function Navbar() {
     return (
@@ -72,7 +74,7 @@ function Navbar() {
                 </ul>
             </div>
 
-
+{<SearchBar/>}
             <div
                 className="navbtn sm:flex   items-center gap-4 text-[20px]    "
                 id="navbtn"
@@ -123,3 +125,24 @@ export function SearchInput() {
         <IoSearch className="text-2xl cursor-pointer text-zinc-600 hover:text-black transition-all duration-300" />
     </div>
 }
+ 
+
+export const SearchBar = () => {
+  return (
+    <div className="hidden md:flex items-center w-[320px] h-[48px] bg-white border border-gray-300 rounded-full px-4 shadow-sm hover:shadow-md transition-all duration-300">
+
+      <input
+        type="search"
+        placeholder="Search for shoes..."
+        className="w-full bg-transparent outline-none text-gray-700 placeholder:text-gray-400"
+      />
+
+      <button className="w-[36px] h-[36px] rounded-full  text-black flex items-center justify-center hover:bg-gray-800 transition-all duration-300">
+
+        <IoSearch className="text-lg" />
+
+      </button>
+
+    </div>
+  );
+};

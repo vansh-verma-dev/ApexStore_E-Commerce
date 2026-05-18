@@ -3,9 +3,9 @@ import FAQ from "../Components/Faq";
 import Footer from "../Components/Footer";
 import HeroSection from "../Components/Hero";
 import MobileNav from "../Components/MobileNav";
-import Navbar from "../Components/Navbar";
+import Navbar, { SearchBar } from "../Components/Navbar";
 import Product from "../Components/Product";
- 
+
 import WhyChooseUs from "./WhyChooseUs";
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
       <MobileNav />
       <CategorySection />
       <Product />
-      <WhyChooseUs/>
+      <WhyChooseUs />
       <FAQ />
       <Footer />
     </>
