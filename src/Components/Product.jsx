@@ -52,10 +52,11 @@ function Product() {
 
                         </div>
 
-                        
-                        <button className="w-full mt-4 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition">
-                            Add To Cart
-                        </button>
+                        <Link to={`/product/${item.id}`}>
+                            <button className="w-full mt-4 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition">
+                                Add To Cart
+                            </button>
+                        </Link>
                     </div>
 
                 </div>

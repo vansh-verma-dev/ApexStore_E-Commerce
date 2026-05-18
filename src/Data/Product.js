@@ -5,9 +5,12 @@ const shoesData = [
     brand: "Nike",
     name: "Nike Air Max Pulse",
     price: 12999,
+    oldPrice: 14399,
+    discount: 30,
     rating: 4.8,
-    image:
-       "https://i.pinimg.com/1200x/8b/3b/fa/8b3bfaf6d9a9ad6cc09c45f3d1b06395.jpg",
+    Review: 1218,
+    image: "https://i.pinimg.com/1200x/8b/3b/fa/8b3bfaf6d9a9ad6cc09c45f3d1b06395.jpg",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 2,
@@ -17,6 +20,7 @@ const shoesData = [
     rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 3,
@@ -26,6 +30,7 @@ const shoesData = [
     rating: 4.7,
     image:
       "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 4,
@@ -35,6 +40,7 @@ const shoesData = [
     rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // Puma
@@ -46,6 +52,7 @@ const shoesData = [
     rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 6,
@@ -55,6 +62,7 @@ const shoesData = [
     rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1608667508764-33cf0726b13a",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 7,
@@ -64,6 +72,7 @@ const shoesData = [
     rating: 4.3,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 8,
@@ -73,6 +82,7 @@ const shoesData = [
     rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // Adidas
@@ -84,6 +94,7 @@ const shoesData = [
     rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 10,
@@ -93,6 +104,7 @@ const shoesData = [
     rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 11,
@@ -102,6 +114,7 @@ const shoesData = [
     rating: 4.8,
     image:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 12,
@@ -111,6 +124,7 @@ const shoesData = [
     rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // Campus
@@ -122,6 +136,7 @@ const shoesData = [
     rating: 4.2,
     image:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 14,
@@ -131,6 +146,7 @@ const shoesData = [
     rating: 4.1,
     image:
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 15,
@@ -140,6 +156,7 @@ const shoesData = [
     rating: 4.3,
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 16,
@@ -149,6 +166,7 @@ const shoesData = [
     rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // Red Tape
@@ -160,6 +178,7 @@ const shoesData = [
     rating: 4.2,
     image:
       "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg",]
   },
   {
     id: 18,
@@ -169,6 +188,7 @@ const shoesData = [
     rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 19,
@@ -178,6 +198,7 @@ const shoesData = [
     rating: 4.1,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 20,
@@ -187,6 +208,7 @@ const shoesData = [
     rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // New Balance
@@ -198,6 +220,7 @@ const shoesData = [
     rating: 4.7,
     image:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 22,
@@ -207,6 +230,7 @@ const shoesData = [
     rating: 4.8,
     image:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 23,
@@ -216,6 +240,7 @@ const shoesData = [
     rating: 4.6,
     image:
       "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 24,
@@ -225,6 +250,7 @@ const shoesData = [
     rating: 4.9,
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 
   // Skechers
@@ -236,6 +262,7 @@ const shoesData = [
     rating: 4.4,
     image:
       "https://images.unsplash.com/photo-1608667508764-33cf0726b13a",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 26,
@@ -245,6 +272,7 @@ const shoesData = [
     rating: 4.5,
     image:
       "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 27,
@@ -252,8 +280,8 @@ const shoesData = [
     name: "Skechers Max Cushion",
     price: 8499,
     rating: 4.7,
-    image:
-      "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
+    image: "https://images.unsplash.com/photo-1543508282-6319a3e2621f",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
   {
     id: 28,
@@ -261,8 +289,8 @@ const shoesData = [
     name: "Skechers Street Wear",
     price: 5499,
     rating: 4.3,
-    image:
-      "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
+    image: "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
+    showImags: ["https://i.pinimg.com/1200x/43/4b/e5/434be5531c0ee032c31e54c357fea64f.jpg", "https://i.pinimg.com/1200x/3d/e8/a1/3de8a1cf309d48a1b44b80bf03521587.jpg", "https://i.pinimg.com/736x/4f/86/da/4f86da37127de357e668e63be2f4f0bc.jpg", ""]
   },
 ];
 
