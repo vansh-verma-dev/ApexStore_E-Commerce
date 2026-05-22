@@ -14,6 +14,7 @@ import { RiExchangeBoxLine } from "react-icons/ri";
 import { FiHeart } from "react-icons/fi";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Footer from "./Footer.jsx";
+import MobileNav from "./MobileNav.jsx";
 
 function ViewProducts() {
 
@@ -415,7 +416,9 @@ function ViewProducts() {
 
 
       </section>
+   
     <Footer/>
+   <MobileNav/>
     </>
   );
 }

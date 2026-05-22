@@ -12,13 +12,13 @@ function Navbar() {
             id="Navbar"
         >
 
-
-            <a href="#HomePage">
+            <Link to="/">
                 <div className="logo" id="logo">
                     <img src="./logo.png" alt=""
                         className="h-15"
                     />
-                </div></a>
+                </div>
+            </Link>
 
             <div
                 className="navLinks hidden lg:block"
@@ -74,7 +74,7 @@ function Navbar() {
                 </ul>
             </div>
 
-{<SearchBar/>}
+            {<SearchBar />}
             <div
                 className="navbtn sm:flex   items-center gap-4 text-[20px]    "
                 id="navbtn"
@@ -125,24 +125,24 @@ export function SearchInput() {
         <IoSearch className="text-2xl cursor-pointer text-zinc-600 hover:text-black transition-all duration-300" />
     </div>
 }
- 
+
 
 export const SearchBar = () => {
-  return (
-    <div className="hidden md:flex items-center w-[320px] h-[48px] bg-white border border-gray-300 rounded-full px-4 shadow-sm hover:shadow-md transition-all duration-300">
+    return (
+        <div className="hidden md:flex items-center w-[320px] h-[48px] bg-white border border-gray-300 rounded-full px-4 shadow-sm hover:shadow-md transition-all duration-300">
 
-      <input
-        type="search"
-        placeholder="Search for shoes..."
-        className="w-full bg-transparent outline-none text-gray-700 placeholder:text-gray-400"
-      />
+            <input
+                type="search"
+                placeholder="Search for shoes..."
+                className="w-full bg-transparent outline-none text-gray-700 placeholder:text-gray-400"
+            />
 
-      <button className="w-[36px] h-[36px] rounded-full  text-black flex items-center justify-center hover:bg-gray-800 transition-all duration-300">
+            <button className="w-[36px] h-[36px] rounded-full  text-black flex items-center justify-center hover:bg-gray-800 transition-all duration-300">
 
-        <IoSearch className="text-lg" />
+                <IoSearch className="text-lg" />
 
-      </button>
+            </button>
 
-    </div>
-  );
+        </div>
+    );
 };
