@@ -17,13 +17,14 @@ function Product() {
                 <div
                     key={item.id}
                     className="product_card bg-white rounded-2xl overflow-hidden  shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-                    data-aos="zoom-in"
+                    
                 >
 
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden bg-gray-200   rounded-xl">
                         <img
                             src={item.image}
                             alt={item.name}
+                            loading="lazy"
                             className="w-full h-[240px] object-cover hover:scale-110 transition duration-500"
                         />
                     </div>

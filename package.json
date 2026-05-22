@@ -12,9 +12,13 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "aos": "^2.3.4",
-    "axios": "^1.16.0",
+    "axios": "^1.16.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",
+    "openai": "^6.38.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-hot-toast": "^2.6.0",
@@ -32,5 +36,18 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "vite": "^8.0.12"
-  }
+  },
+  "description": "live link: https://apexstore-e-commerce.onrender.com/",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vansh-verma-dev/ApexStore_E-Commerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vansh-verma-dev/ApexStore_E-Commerce/issues"
+  },
+  "homepage": "https://github.com/vansh-verma-dev/ApexStore_E-Commerce#readme"
 }

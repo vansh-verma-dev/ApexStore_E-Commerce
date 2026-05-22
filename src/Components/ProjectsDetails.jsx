@@ -1,24 +1,45 @@
 import Navbar from "./Navbar";
 import shoesData from "../Data/Product.js";
 import { useParams } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+
+// ICONS
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { FaStar } from "react-icons/fa";
 import { BsTruck } from "react-icons/bs";
-import { useState } from "react";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
+import { MdSecurity } from "react-icons/md";
+import { RiExchangeBoxLine } from "react-icons/ri";
+import { FiHeart } from "react-icons/fi";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Footer from "./Footer.jsx";
 
 function ViewProducts() {
+
   const { id } = useParams();
 
-  const [activeSize, setActiveSize] = useState(8);
-
-  // Product Find
+  // FIND PRODUCT
   const singleProduct = shoesData.find(
     (item) => item.id == id
   );
 
-  // Agar product na mile
+  // STATES
+  const [activeSize, setActiveSize] = useState(8);
+  const [mainImg, setMainImg] = useState("");
+  const [quantity, setQuantity] = useState(1);
+
+  // SCROLL REF
+  const scrollRef = useRef();
+
+  // SET MAIN IMAGE
+  useEffect(() => {
+    if (singleProduct) {
+      setMainImg(singleProduct.image);
+    }
+  }, [singleProduct]);
+
+  // PRODUCT NOT FOUND
   if (!singleProduct) {
     return (
       <div className="text-center mt-20 text-2xl font-semibold">
@@ -27,7 +48,7 @@ function ViewProducts() {
     );
   }
 
-  // Next 7 Day Delivery Date
+  // DELIVERY DATE
   const today = new Date();
 
   today.setDate(today.getDate() + 7);
@@ -38,88 +59,200 @@ function ViewProducts() {
     month: "long",
   });
 
+  // ALL IMAGES
+  const allImages = [
+    singleProduct.image,
+    ...singleProduct.showImags,
+  ].filter((img) => img);
+
+  // SCROLL FUNCTION
+  const scroll = (direction) => {
+
+    if (direction === "left") {
+      scrollRef.current.scrollBy({
+        left: -200,
+        behavior: "smooth",
+      });
+    } else {
+      scrollRef.current.scrollBy({
+        left: 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <Navbar />
 
-      <section className="w-full grid sm:grid-cols-2 grid-cols-1 gap-8 px-4 sm:px-8 py-6 overflow-hidden">
+      <section className="w-full grid lg:grid-cols-2 grid-cols-1 gap-10 px-4 sm:px-8 lg:px-14 py-8">
 
         {/* LEFT SIDE */}
         <div className="w-full">
 
-          <div className="w-full h-[450px] bg-gray-100 rounded-2xl overflow-hidden">
+          {/* MAIN IMAGE */}
+          <div className="w-full h-[500px] bg-gray-100 rounded-3xl overflow-hidden relative group">
 
             <img
-              src={singleProduct.image}
+              src={mainImg}
               alt={singleProduct.name}
-              className="w-full h-full object-cover hover:scale-105 transition-all duration-300"
+              className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
             />
+
+            {/* WISHLIST */}
+            <button className="absolute top-4 right-4 bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-black hover:text-white transition-all">
+
+              <FiHeart className="text-xl" />
+
+            </button>
+
+          </div>
+
+          {/* THUMBNAILS */}
+          <div className="relative mt-5">
+
+            {/* LEFT BTN */}
+            <button
+              onClick={() => scroll("left")}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <ChevronLeft />
+            </button>
+
+           
+            <div
+              ref={scrollRef}
+              className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide px-12   py-1"
+            >
+
+              {allImages.map((img, ind) => (
+
+                <img
+                  key={ind}
+                  src={img}
+                  alt=""
+                  onClick={() => setMainImg(img)}
+                  className={`min-w-[95px] h-[95px] rounded-2xl object-cover border-2 cursor-pointer p-1 transition-all duration-300
+
+                  ${mainImg === img
+                      ? "border-black scale-105"
+                      : "border-gray-300 hover:border-black"
+                    }
+                  `}
+                />
+
+              ))}
+
+            </div>
+
+         
+            <button
+              onClick={() => scroll("right")}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <ChevronRight />
+            </button>
 
           </div>
 
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="w-full flex flex-col gap-4">
+        
+        <div className="w-full flex flex-col gap-5">
 
-          {/* Product Name */}
+         
+          <span className="text-sm font-medium text-gray-500 uppercase tracking-widest">
+            {singleProduct.brand}
+          </span>
+
+        
           <div>
 
-            <h1 className="text-3xl sm:text-4xl font-semibold text-gray-800">
+            <h1 className="text-4xl font-bold text-gray-900">
               {singleProduct.name}
             </h1>
 
-            <p className="text-gray-500 mt-1">
+            <p className="text-gray-500 mt-2 text-lg">
               {singleProduct.tagline}
             </p>
 
           </div>
 
-          {/* Price */}
-          <div className="flex items-center gap-3 flex-wrap">
+    
+          <div className="flex items-center gap-4 flex-wrap">
 
-            <h2 className="flex items-center text-3xl font-bold text-black">
-              <LiaRupeeSignSolid />
-              {singleProduct.price}
-            </h2>
+            <div className="flex items-center gap-2 bg-green-500 text-white px-4 py-1 rounded-full">
 
-            <p className="flex items-center text-gray-400 line-through text-lg">
-              <LiaRupeeSignSolid />
-              {singleProduct.oldPrice}
+              <span className="font-semibold">
+                {singleProduct.rating}
+              </span>
+
+              <FaStar />
+
+            </div>
+
+            <p className="text-gray-500">
+              {singleProduct.Review}+ Reviews
             </p>
 
-            <span className="text-green-600 font-semibold">
-              {singleProduct.discount}% OFF
+            <span className="text-green-600 font-medium">
+              In Stock
             </span>
 
           </div>
 
-          <p className="text-gray-400 text-sm">
+      
+          <div className="flex items-center gap-4 flex-wrap">
+
+            <h2 className="flex items-center text-4xl font-bold text-black">
+
+              <LiaRupeeSignSolid />
+
+              {singleProduct.price}
+
+            </h2>
+
+            <p className="flex items-center text-gray-400 line-through text-xl">
+
+              <LiaRupeeSignSolid />
+
+              {singleProduct.oldPrice}
+
+            </p>
+
+            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+
+              {singleProduct.discount}% OFF
+
+            </span>
+
+          </div>
+
+          <p className="text-sm text-gray-500">
             Inclusive of all taxes (GST included)
           </p>
 
-          {/* Rating */}
-          <div className="flex items-center gap-3">
+      
+          <div className="border-t border-b py-5">
 
-            <span className="flex items-center gap-1 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+            <h2 className="text-xl font-semibold mb-3">
+              Product Description
+            </h2>
 
-              {singleProduct.rating}
-
-              <FaStar className="text-xs" />
-
-            </span>
-
-            <p className="text-gray-500">
-              {singleProduct.Review} Reviews
+            <p className="text-gray-600 leading-7">
+              Experience unmatched comfort and premium street-style
+              fashion with the {singleProduct.name}. Designed for
+              performance, flexibility, and all-day comfort.
+              Perfect for casual wear, gym, running, and lifestyle use.
             </p>
 
           </div>
 
-          {/* Sizes */}
-          <div className="mt-2">
+        
+          <div>
 
-            <h2 className="text-xl font-semibold text-gray-700 mb-3">
-              Available Sizes
+            <h2 className="text-xl font-semibold mb-4">
+              Select Size
             </h2>
 
             <div className="flex gap-3 flex-wrap">
@@ -131,11 +264,10 @@ function ViewProducts() {
                   onClick={() => setActiveSize(size)}
                   className={`w-16 h-14 rounded-xl border text-lg font-medium transition-all duration-300
 
-                  ${
-                    activeSize === size
+                  ${activeSize === size
                       ? "bg-black text-white border-black"
-                      : "border-gray-300 text-gray-700 hover:bg-black hover:text-white"
-                  }
+                      : "border-gray-300 hover:bg-black hover:text-white"
+                    }
                   `}
                 >
                   {size}
@@ -147,56 +279,143 @@ function ViewProducts() {
 
           </div>
 
-          {/* Stock */}
-          <p className="text-green-600 font-semibold text-lg">
-            In Stock
-          </p>
+        
+          <div>
 
-          {/* Delivery */}
-          <div className="grid sm:grid-cols-2 gap-4">
+            <h2 className="text-xl font-semibold mb-3">
+              Quantity
+            </h2>
 
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-4">
 
-              <BsTruck className="text-2xl" />
+              <button
+                onClick={() =>
+                  quantity > 1 && setQuantity(quantity - 1)
+                }
+                className="w-12 h-12 border rounded-xl text-2xl"
+              >
+                -
+              </button>
 
-              <p>
-                Delivered by {deliveryDate}
-              </p>
+              <span className="text-xl font-semibold">
+                {quantity}
+              </span>
 
-            </div>
-
-            <div className="flex items-center gap-2 text-gray-600">
-
-              <FaClockRotateLeft className="text-2xl" />
-
-              <p>Easy 15 Day Returns</p>
+              <button
+                onClick={() =>
+                  setQuantity(quantity + 1)
+                }
+                className="w-12 h-12 border rounded-xl text-2xl"
+              >
+                +
+              </button>
 
             </div>
 
           </div>
 
-          {/* Buttons */}
-          <div className="flex gap-4 mt-4 flex-wrap">
+     <div className="flex gap-4 mt-4 flex">
 
-            <button className="bg-black text-white px-8 h-[52px] rounded-xl flex items-center gap-2 hover:bg-gray-800 transition-all duration-300">
+            <button className="bg-black text-white px-10 p-2 h-[60px]  w-[200px] rounded-2xl flex items-center  hover:bg-gray-800 transition-all duration-300">
 
-              <IoCartOutline className="text-xl" />
+              <IoCartOutline className="text-2xl" />
 
               Add To Cart
 
             </button>
 
-            <button className="border-2 border-black px-8 h-[52px] rounded-xl hover:bg-black hover:text-white transition-all duration-300">
+            <button className="border-2 border-black w-[140px] rounded-2xl hover:bg-black hover:text-white transition-all duration-300">
 
               Buy Now
 
             </button>
 
           </div>
+          {/* FEATURES */}
+          <div className="grid sm:grid-cols-2 gap-4">
+
+            <div className="flex items-center gap-3 bg-gray-100 p-4 rounded-2xl">
+
+              <BsTruck className="text-2xl" />
+
+              <div>
+
+                <h3 className="font-semibold">
+                  Free Delivery
+                </h3>
+
+                <p className="text-sm text-gray-500">
+                  Delivered by {deliveryDate}
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="flex items-center gap-3 bg-gray-100 p-4 rounded-2xl">
+
+              <FaClockRotateLeft className="text-2xl" />
+
+              <div>
+
+                <h3 className="font-semibold">
+                  Easy Returns
+                </h3>
+
+                <p className="text-sm text-gray-500">
+                  15 Day Return Policy
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="flex items-center gap-3 bg-gray-100 p-4 rounded-2xl">
+
+              <MdSecurity className="text-2xl" />
+
+              <div>
+
+                <h3 className="font-semibold">
+                  Secure Payment
+                </h3>
+
+                <p className="text-sm text-gray-500">
+                  100% Secure Checkout
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="flex items-center gap-3 bg-gray-100 p-4 rounded-2xl">
+
+              <RiExchangeBoxLine className="text-2xl" />
+
+              <div>
+
+                <h3 className="font-semibold">
+                  Exchange Available
+                </h3>
+
+                <p className="text-sm text-gray-500">
+                  Size Exchange Support
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+         
+     
 
         </div>
 
+
       </section>
+    <Footer/>
     </>
   );
 }
