@@ -8,12 +8,14 @@ function CartPage() {
     return (
         <>
             <Navbar />
-            <div className="w-full p-5  flex flex-col  items-center ">
+            {/* <div className="w-full p-5  flex flex-col  items-center ">
                 <FaShoppingBag
                     className="text-gray-400  text-7xl mt-20"
                 />
                 <button className="text-2xl text-white bg-blue-600 p-5 rounded-2xl mt-5">Explore Your Products</button>
-            </div>
+            </div> */}
+
+          
             <Footer />
             <MobileNav />
         </>

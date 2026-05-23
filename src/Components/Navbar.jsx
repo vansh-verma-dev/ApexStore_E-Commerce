@@ -80,14 +80,16 @@ function Navbar() {
                 id="navbtn"
             >
 
-                <a href="#" >
+                <Link to="/Cart">
                     <button
                         className="CartBtn w-[45px] h-[45px] rounded-full border border-zinc-300 sm:flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer 
                         hidden"
                     >
                         <FaCartShopping />
                     </button>
-                </a>
+                </Link>
+
+
 
 
                 <a href="#">
@@ -113,18 +115,6 @@ function Navbar() {
 }
 
 export default Navbar;
-
-export function SearchInput() {
-    <div className="search_bar hidden lg:flex items-center gap-3 border border-zinc-300 rounded-full px-5 py-3 w-[350px] bg-zinc-50" id="search_bar">
-        <input
-            type="search"
-            placeholder="What are you looking for?"
-            className="w-full bg-transparent outline-none text-sm"
-        />
-
-        <IoSearch className="text-2xl cursor-pointer text-zinc-600 hover:text-black transition-all duration-300" />
-    </div>
-}
 
 
 export const SearchBar = () => {

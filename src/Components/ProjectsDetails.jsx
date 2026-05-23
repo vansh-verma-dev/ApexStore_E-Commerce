@@ -82,6 +82,20 @@ function ViewProducts() {
     }
   };
 
+  const [Price, setPrice] = useState(singleProduct.price);
+  const [name, setName] = useState(singleProduct.name);
+  const [cartarr, setCartarr] = useState([]);
+   const handelCart = () => {
+    const product = {
+      name: singleProduct.name,
+      price: singleProduct.price
+    };
+
+    setCartarr((prev) => [...prev, product]);
+
+    console.log(product);
+
+  }
   return (
     <>
       <Navbar />
@@ -120,7 +134,7 @@ function ViewProducts() {
               <ChevronLeft />
             </button>
 
-           
+
             <div
               ref={scrollRef}
               className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide px-12   py-1"
@@ -146,7 +160,7 @@ function ViewProducts() {
 
             </div>
 
-         
+
             <button
               onClick={() => scroll("right")}
               className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center"
@@ -158,19 +172,19 @@ function ViewProducts() {
 
         </div>
 
-        
+
         <div className="w-full flex flex-col gap-5">
 
-         
+
           <span className="text-sm font-medium text-gray-500 uppercase tracking-widest">
             {singleProduct.brand}
           </span>
 
-        
+
           <div>
 
             <h1 className="text-4xl font-bold text-gray-900">
-              {singleProduct.name}
+              {name}
             </h1>
 
             <p className="text-gray-500 mt-2 text-lg">
@@ -179,7 +193,7 @@ function ViewProducts() {
 
           </div>
 
-    
+
           <div className="flex items-center gap-4 flex-wrap">
 
             <div className="flex items-center gap-2 bg-green-500 text-white px-4 py-1 rounded-full">
@@ -202,14 +216,14 @@ function ViewProducts() {
 
           </div>
 
-      
+
           <div className="flex items-center gap-4 flex-wrap">
 
             <h2 className="flex items-center text-4xl font-bold text-black">
 
               <LiaRupeeSignSolid />
 
-              {singleProduct.price}
+              {Price}
 
             </h2>
 
@@ -233,7 +247,7 @@ function ViewProducts() {
             Inclusive of all taxes (GST included)
           </p>
 
-      
+
           <div className="border-t border-b py-5">
 
             <h2 className="text-xl font-semibold mb-3">
@@ -249,7 +263,7 @@ function ViewProducts() {
 
           </div>
 
-        
+
           <div>
 
             <h2 className="text-xl font-semibold mb-4">
@@ -280,7 +294,7 @@ function ViewProducts() {
 
           </div>
 
-        
+
           <div>
 
             <h2 className="text-xl font-semibold mb-3">
@@ -315,11 +329,14 @@ function ViewProducts() {
 
           </div>
 
-     <div className="flex gap-4 mt-4 flex">
+          <div className="flex gap-4 mt-4 flex">
 
-            <button className="bg-black text-white px-10 p-2 h-[60px]  w-[200px] rounded-2xl flex items-center  hover:bg-gray-800 transition-all duration-300">
+            <button className="bg-black text-white px-10 p-2 h-[60px]  w-[200px] rounded-2xl flex items-center  hover:bg-gray-800 transition-all duration-300"
+              onClick={handelCart}
+            >
 
               <IoCartOutline className="text-2xl" />
+
 
               Add To Cart
 
@@ -408,17 +425,11 @@ function ViewProducts() {
             </div>
 
           </div>
-
-         
-     
-
         </div>
-
-
       </section>
-   
-    <Footer/>
-   <MobileNav/>
+
+      <Footer />
+      <MobileNav />
     </>
   );
 }
