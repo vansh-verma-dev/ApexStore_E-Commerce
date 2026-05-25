@@ -4,11 +4,19 @@ import { ShoppingBag, Mail, Lock, User } from "lucide-react";
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
 
+  const handelSubmit = ()=>{
+    e.preventDefault();
+    console.log(email);
+    console.log(pass);
+    
+  }
   return (
     <div className="w-full h-screen overflow-hidden bg-white flex items-center justify-center px-4">
       <div className="w-full max-w-6xl h-[92vh] rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-        
+
         {/* Left Side */}
         <div className="hidden lg:flex relative bg-black text-white p-12 flex-col justify-between">
           <div>
@@ -84,6 +92,7 @@ export default function AuthPage() {
                   type="email"
                   placeholder="Email Address"
                   className="w-full border border-gray-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-black transition"
+                  onChange={(e)=>setEmail(e.target.value)}
                 />
               </div>
 
@@ -94,6 +103,7 @@ export default function AuthPage() {
                 />
                 <input
                   type="password"
+                    onChange={(e)=>setPass(e.target.value)}
                   placeholder="Password"
                   className="w-full border border-gray-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-black transition"
                 />
@@ -108,6 +118,7 @@ export default function AuthPage() {
 
                   <button
                     type="button"
+                    onClick={handelSubmit}
                     className="text-black font-semibold hover:underline"
                   >
                     Forgot Password?

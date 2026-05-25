@@ -5,6 +5,7 @@ import HeroSection from "../Components/Hero";
 import MobileNav from "../Components/MobileNav";
 import Navbar, { SearchBar } from "../Components/Navbar";
 import Product from "../Components/Product";
+ 
 
 import WhyChooseUs from "./WhyChooseUs";
 
@@ -19,6 +20,7 @@ function Home() {
       <WhyChooseUs />
       <FAQ />
       <Footer />
+ 
     </>
   );
 }

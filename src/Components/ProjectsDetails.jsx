@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import shoesData from "../Data/Product.js";
 import { useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // ICONS
 import { LiaRupeeSignSolid } from "react-icons/lia";
@@ -17,7 +18,7 @@ import Footer from "./Footer.jsx";
 import MobileNav from "./MobileNav.jsx";
 
 function ViewProducts() {
-
+  const navigate = useNavigate();
   const { id } = useParams();
 
   // FIND PRODUCT
@@ -81,21 +82,21 @@ function ViewProducts() {
       });
     }
   };
+  const handelCart = () => {
 
-  const [Price, setPrice] = useState(singleProduct.price);
-  const [name, setName] = useState(singleProduct.name);
-  const [cartarr, setCartarr] = useState([]);
-   const handelCart = () => {
-    const product = {
+    const productarr = {
+      id: singleProduct.id,
       name: singleProduct.name,
-      price: singleProduct.price
+      price: singleProduct.price,
+      image: singleProduct.image,
+      size: activeSize,
+      quantity: quantity,
     };
 
-    setCartarr((prev) => [...prev, product]);
-
-    console.log(product);
-
-  }
+    navigate("/cart", {
+      state: productarr,
+    });
+  };
   return (
     <>
       <Navbar />
@@ -222,8 +223,8 @@ function ViewProducts() {
             <h2 className="flex items-center text-4xl font-bold text-black">
 
               <LiaRupeeSignSolid />
-
-              {Price}
+ 
+             {singleProduct.price}
 
             </h2>
 
