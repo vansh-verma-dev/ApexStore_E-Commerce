@@ -100,7 +100,7 @@ function Navbar() {
                     </button>
                 </a>
 
-                <Link to="/profile">
+                <Link to="/AuthPage">
                     <button
                         className="ProfileBtn w-[45px] h-[45px] rounded-full border border-zinc-300 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
                     >

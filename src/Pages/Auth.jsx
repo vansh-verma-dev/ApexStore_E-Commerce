@@ -1,228 +1,149 @@
+// AuthPage.jsx
 import React, { useState } from "react";
+import { ShoppingBag, Mail, Lock, User } from "lucide-react";
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center px-4 py-10 overflow-hidden">
-
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#ff6b35]/20 blur-[120px] rounded-full"></div>
-
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-500/10 blur-[120px] rounded-full"></div>
-
-      <div className="w-full max-w-6xl grid lg:grid-cols-2 bg-[#111111]/90 border border-white/10 rounded-3xl overflow-hidden shadow-2xl backdrop-blur-xl z-10">
-
-        <div className="hidden lg:flex flex-col justify-between p-14 bg-gradient-to-br from-[#111111] to-[#1a1a1a]">
-
+    <div className="w-full h-screen overflow-hidden bg-white flex items-center justify-center px-4">
+      <div className="w-full max-w-6xl h-[92vh] rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+        
+        {/* Left Side */}
+        <div className="hidden lg:flex relative bg-black text-white p-12 flex-col justify-between">
           <div>
-            <h1 className="text-5xl font-extrabold text-[#ff6b35] tracking-wide">
-              STEPZ
+            <div className="flex items-center gap-2 text-2xl font-bold">
+              <ShoppingBag size={28} />
+              ApexStore
+            </div>
+
+            <h1 className="text-5xl font-bold leading-tight mt-16">
+              Step Into <br /> Premium Style
             </h1>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed max-w-md">
-              Premium sneakers crafted for comfort, style and everyday hustle.
+            <p className="text-gray-300 mt-6 text-lg max-w-md">
+              Discover the latest sneaker collections with modern fashion &
+              comfort. Join the next generation shoes marketplace.
             </p>
           </div>
 
-          <div className="relative flex justify-center items-center">
-
-            <div className="absolute w-72 h-72 bg-[#ff6b35]/20 blur-[100px] rounded-full"></div>
-
+          <div className="flex gap-4">
             <img
-              src="https://placehold.co/600x500"
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
               alt="shoe"
-              className="relative z-10 w-full max-w-md object-contain drop-shadow-[0_20px_40px_rgba(255,107,53,0.3)] hover:scale-105 transition duration-500"
+              className="w-40 h-40 object-cover rounded-2xl"
             />
 
+            <img
+              src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1200&auto=format&fit=crop"
+              alt="shoe"
+              className="w-40 h-40 object-cover rounded-2xl mt-10"
+            />
           </div>
-
-          <div className="grid grid-cols-3 gap-4 mt-10">
-
-            <div className="bg-black/30 border border-white/10 rounded-2xl p-4 text-center">
-              <h3 className="text-[#ff6b35] font-bold text-xl">10K+</h3>
-              <p className="text-gray-400 text-sm mt-1">Happy Users</p>
-            </div>
-
-            <div className="bg-black/30 border border-white/10 rounded-2xl p-4 text-center">
-              <h3 className="text-[#ff6b35] font-bold text-xl">500+</h3>
-              <p className="text-gray-400 text-sm mt-1">Premium Shoes</p>
-            </div>
-
-            <div className="bg-black/30 border border-white/10 rounded-2xl p-4 text-center">
-              <h3 className="text-[#ff6b35] font-bold text-xl">4.9★</h3>
-              <p className="text-gray-400 text-sm mt-1">Top Rated</p>
-            </div>
-
-          </div>
-
         </div>
 
-        <div className="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
+        {/* Right Side */}
+        <div className="bg-white flex items-center justify-center p-6 sm:p-10">
+          <div className="w-full max-w-md">
+            <div className="lg:hidden flex items-center justify-center gap-2 text-3xl font-bold mb-10">
+              <ShoppingBag size={30} />
+              SoleStyle
+            </div>
 
-          <div className="flex bg-[#1a1a1a] border border-white/10 rounded-2xl p-1 mb-10 w-full max-w-xs">
-
-            <button
-              onClick={() => setIsLogin(true)}
-              className={`flex-1 py-3 rounded-xl font-semibold transition duration-300 ${
-                isLogin
-                  ? "bg-[#ff6b35] text-white"
-                  : "text-gray-400"
-              }`}
-            >
-              Login
-            </button>
-
-            <button
-              onClick={() => setIsLogin(false)}
-              className={`flex-1 py-3 rounded-xl font-semibold transition duration-300 ${
-                !isLogin
-                  ? "bg-[#ff6b35] text-white"
-                  : "text-gray-400"
-              }`}
-            >
-              Sign Up
-            </button>
-
-          </div>
-
-          <div className="mb-8">
-
-            <h2 className="text-4xl font-bold">
-              {isLogin ? "Welcome Back" : "Create Account"}
+            <h2 className="text-4xl font-bold text-gray-900">
+              {isLogin ? "Welcome Back " : "Create Account"}
             </h2>
 
-            <p className="text-gray-400 mt-3">
+            <p className="text-gray-500 mt-3">
               {isLogin
-                ? "Login to continue your shopping experience."
-                : "Create your account and explore premium collections."}
+                ? "Login to continue shopping premium sneakers."
+                : "Sign up and explore trendy shoe collections."}
             </p>
 
-          </div>
+            <form className="mt-8 space-y-5">
+              {!isLogin && (
+                <div className="relative">
+                  <User
+                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
+                    size={20}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="w-full border border-gray-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-black transition"
+                  />
+                </div>
+              )}
 
-          <form className="space-y-5">
-
-            {!isLogin && (
-              <div>
-                <label className="text-sm text-gray-400 mb-2 block">
-                  Full Name
-                </label>
-
+              <div className="relative">
+                <Mail
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
+                  size={20}
+                />
                 <input
-                  type="text"
-                  placeholder="Enter your full name"
-                  className="w-full bg-[#1a1a1a] border border-white/10 focus:border-[#ff6b35] outline-none px-5 py-4 rounded-2xl transition duration-300"
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full border border-gray-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-black transition"
                 />
               </div>
-            )}
 
-            <div>
-              <label className="text-sm text-gray-400 mb-2 block">
-                Email Address
-              </label>
-
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full bg-[#1a1a1a] border border-white/10 focus:border-[#ff6b35] outline-none px-5 py-4 rounded-2xl transition duration-300"
-              />
-            </div>
-
-            <div>
-              <label className="text-sm text-gray-400 mb-2 block">
-                Password
-              </label>
-
-              <input
-                type="password"
-                placeholder="Enter your password"
-                className="w-full bg-[#1a1a1a] border border-white/10 focus:border-[#ff6b35] outline-none px-5 py-4 rounded-2xl transition duration-300"
-              />
-            </div>
-
-            {!isLogin && (
-              <div>
-                <label className="text-sm text-gray-400 mb-2 block">
-                  Confirm Password
-                </label>
-
+              <div className="relative">
+                <Lock
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
+                  size={20}
+                />
                 <input
                   type="password"
-                  placeholder="Confirm your password"
-                  className="w-full bg-[#1a1a1a] border border-white/10 focus:border-[#ff6b35] outline-none px-5 py-4 rounded-2xl transition duration-300"
+                  placeholder="Password"
+                  className="w-full border border-gray-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-black transition"
                 />
               </div>
-            )}
 
-            {isLogin && (
-              <div className="flex items-center justify-between text-sm">
+              {isLogin && (
+                <div className="flex items-center justify-between text-sm">
+                  <label className="flex items-center gap-2 text-gray-600">
+                    <input type="checkbox" />
+                    Remember me
+                  </label>
 
-                <label className="flex items-center gap-2 text-gray-400">
-                  <input type="checkbox" />
-                  Remember me
-                </label>
+                  <button
+                    type="button"
+                    className="text-black font-semibold hover:underline"
+                  >
+                    Forgot Password?
+                  </button>
+                </div>
+              )}
 
-                <button
-                  type="button"
-                  className="text-[#ff6b35] hover:underline"
-                >
-                  Forgot Password?
-                </button>
+              <button
+                type="submit"
+                className="w-full bg-black hover:bg-gray-900 transition text-white py-4 rounded-2xl font-semibold text-lg"
+              >
+                {isLogin ? "Sign In" : "Create Account"}
+              </button>
+            </form>
 
-              </div>
-            )}
+            <div className="mt-6">
+              <button className="w-full border border-gray-200 py-4 rounded-2xl font-medium hover:bg-gray-50 transition">
+                Continue with Google
+              </button>
+            </div>
 
-            <button
-              type="submit"
-              className="w-full bg-[#ff6b35] hover:bg-orange-600 transition duration-300 py-4 rounded-2xl font-semibold text-lg shadow-lg shadow-orange-500/20"
-            >
-              {isLogin ? "Login Now" : "Create Account"}
-            </button>
+            <p className="text-center text-gray-500 mt-8">
+              {isLogin
+                ? "Don't have an account?"
+                : "Already have an account?"}
 
-          </form>
-
-          <div className="flex items-center gap-4 my-8">
-
-            <div className="flex-1 h-[1px] bg-white/10"></div>
-
-            <span className="text-gray-500 text-sm">
-              OR CONTINUE WITH
-            </span>
-
-            <div className="flex-1 h-[1px] bg-white/10"></div>
-
+              <button
+                onClick={() => setIsLogin(!isLogin)}
+                className="ml-2 text-black font-semibold hover:underline"
+              >
+                {isLogin ? "Sign Up" : "Sign In"}
+              </button>
+            </p>
           </div>
-
-          <div className="grid grid-cols-2 gap-4">
-
-            <button className="bg-[#1a1a1a] border border-white/10 hover:border-[#ff6b35] transition duration-300 rounded-2xl py-4 flex items-center justify-center gap-3">
-              Google
-            </button>
-
-            <button className="bg-[#1a1a1a] border border-white/10 hover:border-[#ff6b35] transition duration-300 rounded-2xl py-4 flex items-center justify-center gap-3">
-              Apple
-            </button>
-
-          </div>
-
-          <p className="text-center text-gray-500 text-sm mt-10">
-
-            {isLogin
-              ? "Don't have an account?"
-              : "Already have an account?"}
-
-            <button
-              onClick={() => setIsLogin(!isLogin)}
-              className="text-[#ff6b35] ml-2 hover:underline"
-            >
-              {isLogin ? "Sign Up" : "Login"}
-            </button>
-
-          </p>
-
         </div>
-
       </div>
-
     </div>
   );
 }
