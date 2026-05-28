@@ -99,8 +99,7 @@ function ViewProducts() {
   };
   return (
     <>
-      <Navbar />
-
+  
       <section className="w-full grid lg:grid-cols-2 grid-cols-1 gap-10 px-4 sm:px-8 lg:px-14 py-8">
 
         {/* LEFT SIDE */}

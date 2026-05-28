@@ -1,7 +1,7 @@
 
 function HeroSection() {
     return (
- <section className="relative h-[25vh] w-[90%] ml-2.5 mt-2.5  sm:m-0  sm:rounded-none rounded-2xl sm:h-[80vh] sm:w-full overflow-hidden">
+ <section className="relative h-[20vh] w-[95%] ml-2.5 mt-2.5  sm:m-0  sm:rounded-none rounded-2xl sm:h-[80vh] sm:w-full overflow-hidden">
 
  
   <video
