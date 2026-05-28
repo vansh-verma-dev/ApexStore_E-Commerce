@@ -15,7 +15,6 @@ function Home() {
       <Navbar />
       <HeroSection />
       <MobileNav />
-      <CategorySection />
       <Product />
       <WhyChooseUs />
       <FAQ />

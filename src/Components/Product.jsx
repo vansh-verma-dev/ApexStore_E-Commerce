@@ -1,69 +1,91 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import shoesData from "../Data/Product.js";
 import { FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import CategorySection from "./Category.jsx";
 
-function Product() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-    return (
-        <div className="product_section w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10 bg-gray-100 overflow-hidden" id="Product" >
+function Product({ search }) {
 
-            {shoesData.map((item) => (
+  const [category, setCategory] = useState("all");
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-                <div
-                    key={item.id}
-                    className="product_card bg-white rounded-2xl overflow-hidden  shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-                    
-                >
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-                    <div className="overflow-hidden bg-gray-200   rounded-xl">
-                        <img
-                            src={item.image}
-                            alt={item.name}
-                            loading="lazy"
-                            className="w-full h-[240px] object-cover hover:scale-110 transition duration-500"
-                        />
-                    </div>
+  useEffect(() => {
 
-                    <div className="p-4">
-                        <h2 className="text-lg font-semibold text-gray-800">
-                            {item.name}
-                        </h2>
+    let data = shoesData;
 
-                        <p className="text-sm text-gray-500 mb-3">
-                            {item.brand}
-                        </p>
+    // SEARCH
+    if (search) {
+      data = data.filter((item) =>
+        item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.brand.toLowerCase().includes(search.toLowerCase())
+      );
+    }
 
-                        <div className="flex items-center justify-between">
+    // CATEGORY FILTER (IMPORTANT FIX)
+    if (category !== "all") {
+      data = data.filter((item) =>
+        item.brand.toLowerCase() === category.toLowerCase()
+      );
+    }
 
-                            <h3 className="text-xl font-bold text-black">
-                                ₹{item.price}
-                            </h3>
+    setFilteredProducts(data);
 
-                            <div className="flex items-center gap-1 bg-yellow-100 px-2 py-1 rounded-lg">
-                                <FaStar className="text-yellow-500 text-sm" />
-                                <span className="text-sm font-medium">
-                                    {item.rating}
-                                </span>
-                            </div>
+  }, [search, category]);
 
-                        </div>
+  return (
+    <div>
 
-                        <Link to={`/product/${item.id}`}>
-                            <button className="w-full mt-4 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition">
-                                Add To Cart
-                            </button>
-                        </Link>
-                    </div>
+      {/* CATEGORY */}
+      <CategorySection
+        category={category}
+        setCategory={setCategory}
+      />
 
+      {/* PRODUCTS */}
+      <div className="product_section w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10 bg-gray-100">
+
+        {filteredProducts.map((item) => (
+
+          <div key={item.id} className="product_card bg-white rounded-2xl overflow-hidden shadow-md">
+
+            <img src={item.image} className="w-full h-[240px] object-cover" />
+
+            <div className="p-4">
+
+              <h2>{item.name}</h2>
+              <p className="text-gray-500">{item.brand}</p>
+
+              <div className="flex justify-between mt-2">
+                <span className="font-bold">₹{item.price}</span>
+
+                <div className="flex items-center gap-1">
+                  <FaStar className="text-yellow-500" />
+                  {item.rating}
                 </div>
-            ))}
-        </div>
-    );
+              </div>
+
+              <Link to={`/product/${item.id}`}>
+                <button className="w-full mt-3 bg-black text-white py-2 rounded-xl">
+                  Add To Cart
+                </button>
+              </Link>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+  );
 }
 
 export default Product;

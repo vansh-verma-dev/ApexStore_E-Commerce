@@ -35,18 +35,34 @@ const shoeCategories = [
     img: "https://i.pinimg.com/1200x/81/6f/c8/816fc87ca0ffff5dab1a91e051f2fcc3.jpg",
   },
 ];
+function CategorySection({ category, setCategory }) {
+  const handleClick = (name) => {
+    const value = name.toLowerCase();
 
-function CategorySection() {
+    // toggle (same click = all)
+    if (category === value) {
+      setCategory("all");
+    } else {
+      setCategory(value);
+    }
+  };
+
   return (
-    <section className=" ctegory_section  w-full mt-0  py-6 h-auto  bg-white ">
-      
-      <div className="flex gap-4 bg-white overflow-x-auto px-4 scrollbar-hide justify-center  overflow-y-hidden "> 
+    <section className="ctegory_section w-full mt-0 py-6 h-auto bg-white">
+
+      <div className="flex gap-4 bg-white overflow-x-auto px-4 scrollbar-hide justify-center overflow-y-hidden">
 
         {shoeCategories.map((cat) => (
           <div
             key={cat.id}
-            className=" min-w-[110px]  flex-shrink-0  rounded-xl p-3  flex flex-col items-center justify-center hover:scale-105 transition duration-300 cursor-pointer"
+            onClick={() => handleClick(cat.name)}
+            className={`min-w-[110px] flex-shrink-0 rounded-xl p-3 flex flex-col items-center justify-center cursor-pointer transition duration-300 hover:scale-105 ${
+              category === cat.name.toLowerCase()
+                ? "border-2 border-black scale-110"
+                : ""
+            }`}
           >
+
             <img
               src={cat.img}
               alt={cat.name}
@@ -56,6 +72,7 @@ function CategorySection() {
             <p className="text-sm mt-2 text-center font-medium">
               {cat.name}
             </p>
+
           </div>
         ))}
 

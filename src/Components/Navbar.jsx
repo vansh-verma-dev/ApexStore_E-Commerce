@@ -74,7 +74,7 @@ function Navbar() {
                 </ul>
             </div>
 
-            {<SearchBar />}
+            {/* {<SearchBar />} */}
             <div
                 className="navbtn sm:flex   items-center gap-4 text-[20px]    "
                 id="navbtn"
