@@ -58,26 +58,16 @@ function PaymentPage() {
   const [addresses, setAddresses] = useState([
     {
       id: 1,
-      name: "Rahul Sharma",
+      name: "Vansh verma",
       address: "21 Rajpur Road, Near Clock Tower",
       city: "Dehradun",
       state: "Uttarakhand",
       zip: "248001",
-      phone: "+91 9876543210",
+      phone: "+91 XXXXXXXX89",
       isDefault: true,
       type: "Home",
     },
-    {
-      id: 2,
-      name: "Rahul Sharma",
-      address: "Office Tower, Sector 15",
-      city: "Gurgaon",
-      state: "Haryana",
-      zip: "122001",
-      phone: "+91 9876543211",
-      isDefault: false,
-      type: "Work",
-    },
+   
   ]);
 
   const [newAddress, setNewAddress] = useState({
