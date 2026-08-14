@@ -17,7 +17,7 @@ function Navbar() {
     const UserLocation = "Meerut";
 
     return (
-        <nav className="w-full bg-slate-900 text-white shadow-md">
+        <nav className="w-full bg-slate-900 text-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 py-3">
 
                 {/* Logo */}

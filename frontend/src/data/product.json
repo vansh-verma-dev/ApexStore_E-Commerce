@@ -1,0 +1,1986 @@
+{
+  "storeName": "UrbanCart",
+  "totalProducts": 50,
+  "generatedAt": "2026-08-14",
+  "products": [
+    {
+      "id": 1001,
+      "sku": "PUM-LOA-1001",
+      "name": "Puma Penny Loafer Loafers",
+      "brand": "Puma",
+      "category": "Footwear",
+      "subCategory": "Loafers",
+      "description": "Puma Penny Loafer Loafers - premium quality loafers from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 4499,
+      "discountPercent": 20,
+      "discountedPrice": 3599,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 851,
+      "inStock": true,
+      "stockQuantity": 173,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Khaki",
+        "White",
+        "Maroon"
+      ],
+      "images": [
+        "https://i.pinimg.com/736x/bd/50/cc/bd50cc18c0a018bf889ed9787aeaa6c7.jpg"
+      ],
+      "isFeatured": true,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "loafers",
+        "puma"
+      ]
+    },
+    {
+      "id": 1002,
+      "sku": "PUM-SPO-1002",
+      "name": "Puma GYM Flex Sports Shoes",
+      "brand": "Puma",
+      "category": "Footwear",
+      "subCategory": "Sports Shoes",
+      "description": "Puma GYM Flex Sports Shoes - premium quality sports shoes from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 7949,
+      "discountPercent": 40,
+      "discountedPrice": 4769,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 2290,
+      "inStock": true,
+      "stockQuantity": 207,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Navy Blue"
+      ],
+      "images": [
+      "https://i.pinimg.com/736x/bd/50/cc/bd50cc18c0a018bf889ed9787aeaa6c7.jpg"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "sports shoes",
+        "puma"
+      ]
+    },
+    {
+      "id": 1003,
+      "sku": "PUM-FOR-1003",
+      "name": "Puma Oxford Formal Shoes",
+      "brand": "Puma",
+      "category": "Footwear",
+      "subCategory": "Formal Shoes",
+      "description": "Puma Oxford Formal Shoes - premium quality formal shoes from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5849,
+      "discountPercent": 10,
+      "discountedPrice": 5264,
+      "currency": "INR",
+      "rating": 3.9,
+      "reviewCount": 2829,
+      "inStock": true,
+      "stockQuantity": 154,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Black",
+        "Beige"
+      ],
+      "images": [
+       "https://i.pinimg.com/736x/bd/50/cc/bd50cc18c0a018bf889ed9787aeaa6c7.jpg"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "formal shoes",
+        "puma"
+      ]
+    },
+    {
+      "id": 1004,
+      "sku": "ADI-SPO-1004",
+      "name": "Adidas Sprint Max Sports Shoes",
+      "brand": "Adidas",
+      "category": "Footwear",
+      "subCategory": "Sports Shoes",
+      "description": "Adidas Sprint Max Sports Shoes - premium quality sports shoes from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 8349,
+      "discountPercent": 20,
+      "discountedPrice": 6679,
+      "currency": "INR",
+      "rating": 4.5,
+      "reviewCount": 387,
+      "inStock": true,
+      "stockQuantity": 169,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Red"
+      ],
+      "images": [
+       "https://i.pinimg.com/736x/bd/50/cc/bd50cc18c0a018bf889ed9787aeaa6c7.jpg"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "sports shoes",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1005,
+      "sku": "ADI-SAN-1005",
+      "name": "Adidas Casual Slide Sandals",
+      "brand": "Adidas",
+      "category": "Footwear",
+      "subCategory": "Sandals",
+      "description": "Adidas Casual Slide Sandals - premium quality sandals from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5649,
+      "discountPercent": 15,
+      "discountedPrice": 4802,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 1728,
+      "inStock": true,
+      "stockQuantity": 171,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "White",
+        "Navy Blue"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sandals,adidas"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "sandals",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1006,
+      "sku": "WOO-FOR-1006",
+      "name": "Woodland Leather Classic Formal Shoes",
+      "brand": "Woodland",
+      "category": "Footwear",
+      "subCategory": "Formal Shoes",
+      "description": "Woodland Leather Classic Formal Shoes - premium quality formal shoes from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3799,
+      "discountPercent": 30,
+      "discountedPrice": 2659,
+      "currency": "INR",
+      "rating": 4.7,
+      "reviewCount": 470,
+      "inStock": true,
+      "stockQuantity": 58,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Olive"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?formal-shoes,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": true,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "formal shoes",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1007,
+      "sku": "WOO-SPO-1007",
+      "name": "Woodland Sprint Max Sports Shoes",
+      "brand": "Woodland",
+      "category": "Footwear",
+      "subCategory": "Sports Shoes",
+      "description": "Woodland Sprint Max Sports Shoes - premium quality sports shoes from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3699,
+      "discountPercent": 50,
+      "discountedPrice": 1850,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 3770,
+      "inStock": true,
+      "stockQuantity": 36,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Navy Blue",
+        "Grey"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sports-shoes,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "sports shoes",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1008,
+      "sku": "REE-SAN-1008",
+      "name": "Reebok Casual Slide Sandals",
+      "brand": "Reebok",
+      "category": "Footwear",
+      "subCategory": "Sandals",
+      "description": "Reebok Casual Slide Sandals - premium quality sandals from Reebok, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5599,
+      "discountPercent": 20,
+      "discountedPrice": 4479,
+      "currency": "INR",
+      "rating": 4.9,
+      "reviewCount": 1145,
+      "inStock": true,
+      "stockQuantity": 130,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sandals,reebok"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "sandals",
+        "reebok"
+      ]
+    },
+    {
+      "id": 1009,
+      "sku": "BAT-LOA-1009",
+      "name": "Bata Classic Moc Loafers",
+      "brand": "Bata",
+      "category": "Footwear",
+      "subCategory": "Loafers",
+      "description": "Bata Classic Moc Loafers - premium quality loafers from Bata, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1799,
+      "discountPercent": 40,
+      "discountedPrice": 1079,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 3846,
+      "inStock": true,
+      "stockQuantity": 135,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Khaki",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?loafers,bata"
+      ],
+      "isFeatured": false,
+      "isNewArrival": true,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "loafers",
+        "bata"
+      ]
+    },
+    {
+      "id": 1010,
+      "sku": "SKE-FOR-1010",
+      "name": "Skechers Brogue Formal Shoes",
+      "brand": "Skechers",
+      "category": "Footwear",
+      "subCategory": "Formal Shoes",
+      "description": "Skechers Brogue Formal Shoes - premium quality formal shoes from Skechers, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2399,
+      "discountPercent": 25,
+      "discountedPrice": 1799,
+      "currency": "INR",
+      "rating": 4.1,
+      "reviewCount": 3728,
+      "inStock": false,
+      "stockQuantity": 0,
+      "availableSizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "availableColors": [
+        "Red",
+        "Khaki",
+        "Navy Blue"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?formal-shoes,skechers"
+      ],
+      "isFeatured": false,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "footwear",
+        "formal shoes",
+        "skechers"
+      ]
+    },
+    {
+      "id": 1011,
+      "sku": "ZAR-HOO-1011",
+      "name": "Zara Fleece Hoodies",
+      "brand": "Zara",
+      "category": "Men's Clothing",
+      "subCategory": "Hoodies",
+      "description": "Zara Fleece Hoodies - premium quality hoodies from Zara, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1649,
+      "discountPercent": 15,
+      "discountedPrice": 1402,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 1335,
+      "inStock": true,
+      "stockQuantity": 138,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Black",
+        "Olive",
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?hoodies,zara"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "hoodies",
+        "zara"
+      ]
+    },
+    {
+      "id": 1012,
+      "sku": "H&M-JEA-1012",
+      "name": "H&M Slim Fit Jeans",
+      "brand": "H&M",
+      "category": "Men's Clothing",
+      "subCategory": "Jeans",
+      "description": "H&M Slim Fit Jeans - premium quality jeans from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1899,
+      "discountPercent": 10,
+      "discountedPrice": 1709,
+      "currency": "INR",
+      "rating": 3.5,
+      "reviewCount": 3993,
+      "inStock": true,
+      "stockQuantity": 208,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Khaki"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?jeans,h&m"
+      ],
+      "isFeatured": false,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "jeans",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1013,
+      "sku": "H&M-TRA-1013",
+      "name": "H&M Joggers Track Pants",
+      "brand": "H&M",
+      "category": "Men's Clothing",
+      "subCategory": "Track Pants",
+      "description": "H&M Joggers Track Pants - premium quality track pants from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3749,
+      "discountPercent": 40,
+      "discountedPrice": 2249,
+      "currency": "INR",
+      "rating": 4.8,
+      "reviewCount": 4429,
+      "inStock": true,
+      "stockQuantity": 193,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Grey",
+        "Red",
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?track-pants,h&m"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "track pants",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1014,
+      "sku": "ADI-TRA-1014",
+      "name": "Adidas Slim Fit Track Pants",
+      "brand": "Adidas",
+      "category": "Men's Clothing",
+      "subCategory": "Track Pants",
+      "description": "Adidas Slim Fit Track Track Pants - premium quality track pants from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1949,
+      "discountPercent": 20,
+      "discountedPrice": 1559,
+      "currency": "INR",
+      "rating": 3.5,
+      "reviewCount": 184,
+      "inStock": true,
+      "stockQuantity": 150,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Grey",
+        "Sky Blue",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?track-pants,adidas"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "track pants",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1015,
+      "sku": "PUM-T-S-1015",
+      "name": "Puma Graphic Print T-Shirts",
+      "brand": "Puma",
+      "category": "Men's Clothing",
+      "subCategory": "T-Shirts",
+      "description": "Puma Graphic Print T-Shirts - premium quality t-shirts from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3649,
+      "discountPercent": 20,
+      "discountedPrice": 2919,
+      "currency": "INR",
+      "rating": 3.8,
+      "reviewCount": 3988,
+      "inStock": true,
+      "stockQuantity": 54,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Navy Blue",
+        "Beige",
+        "Grey"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?t-shirts,puma"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "t-shirts",
+        "puma"
+      ]
+    },
+    {
+      "id": 1016,
+      "sku": "ADI-T-S-1016",
+      "name": "Adidas Polo T-Shirts",
+      "brand": "Adidas",
+      "category": "Men's Clothing",
+      "subCategory": "T-Shirts",
+      "description": "Adidas Polo T-Shirts - premium quality t-shirts from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3099,
+      "discountPercent": 40,
+      "discountedPrice": 1859,
+      "currency": "INR",
+      "rating": 4.1,
+      "reviewCount": 455,
+      "inStock": true,
+      "stockQuantity": 172,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "White",
+        "Black",
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?t-shirts,adidas"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "t-shirts",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1017,
+      "sku": "H&M-SHI-1017",
+      "name": "H&M Denim Shirts",
+      "brand": "H&M",
+      "category": "Men's Clothing",
+      "subCategory": "Shirts",
+      "description": "H&M Denim Shirts - premium quality shirts from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1249,
+      "discountPercent": 40,
+      "discountedPrice": 749,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 3801,
+      "inStock": true,
+      "stockQuantity": 63,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?shirts,h&m"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "shirts",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1018,
+      "sku": "ZAR-HOO-1018",
+      "name": "Zara Pullover Hoodies",
+      "brand": "Zara",
+      "category": "Men's Clothing",
+      "subCategory": "Hoodies",
+      "description": "Zara Pullover Hoodies - premium quality hoodies from Zara, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 949,
+      "discountPercent": 20,
+      "discountedPrice": 759,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 3990,
+      "inStock": true,
+      "stockQuantity": 123,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?hoodies,zara"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "hoodies",
+        "zara"
+      ]
+    },
+    {
+      "id": 1019,
+      "sku": "PUM-JAC-1019",
+      "name": "Puma Puffer Jackets",
+      "brand": "Puma",
+      "category": "Men's Clothing",
+      "subCategory": "Jackets",
+      "description": "Puma Puffer Jackets - premium quality jackets from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2199,
+      "discountPercent": 40,
+      "discountedPrice": 1319,
+      "currency": "INR",
+      "rating": 4.4,
+      "reviewCount": 4564,
+      "inStock": true,
+      "stockQuantity": 169,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Beige",
+        "Navy Blue",
+        "Grey"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?jackets,puma"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "jackets",
+        "puma"
+      ]
+    },
+    {
+      "id": 1020,
+      "sku": "LEV-TRA-1020",
+      "name": "Levi's Training Pants Track Pants",
+      "brand": "Levi's",
+      "category": "Men's Clothing",
+      "subCategory": "Track Pants",
+      "description": "Levi's Training Pants Track Pants - premium quality track pants from Levi's, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2399,
+      "discountPercent": 0,
+      "discountedPrice": 2399,
+      "currency": "INR",
+      "rating": 3.5,
+      "reviewCount": 3917,
+      "inStock": true,
+      "stockQuantity": 128,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Navy Blue",
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?track-pants,levi's"
+      ],
+      "isFeatured": false,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "men clothing",
+        "track pants",
+        "levi's"
+      ]
+    },
+    {
+      "id": 1021,
+      "sku": "H&M-DRE-1021",
+      "name": "H&M Wrap Dresses",
+      "brand": "H&M",
+      "category": "Women's Clothing",
+      "subCategory": "Dresses",
+      "description": "H&M Wrap Dresses - premium quality dresses from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 4099,
+      "discountPercent": 20,
+      "discountedPrice": 3279,
+      "currency": "INR",
+      "rating": 4.3,
+      "reviewCount": 337,
+      "inStock": true,
+      "stockQuantity": 158,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?dresses,h&m"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "dresses",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1022,
+      "sku": "ZAR-TOP-1022",
+      "name": "Zara Off-Shoulder Tops",
+      "brand": "Zara",
+      "category": "Women's Clothing",
+      "subCategory": "Tops",
+      "description": "Zara Off-Shoulder Tops - premium quality tops from Zara, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1999,
+      "discountPercent": 25,
+      "discountedPrice": 1499,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 2469,
+      "inStock": true,
+      "stockQuantity": 117,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?tops,zara"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "tops",
+        "zara"
+      ]
+    },
+    {
+      "id": 1023,
+      "sku": "LEV-KUR-1023",
+      "name": "Levi's A-Line Kurtis",
+      "brand": "Levi's",
+      "category": "Women's Clothing",
+      "subCategory": "Kurtis",
+      "description": "Levi's A-Line Kurtis - premium quality kurtis from Levi's, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3699,
+      "discountPercent": 25,
+      "discountedPrice": 2774,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 2871,
+      "inStock": true,
+      "stockQuantity": 225,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Grey"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?kurtis,levi's"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "kurtis",
+        "levi's"
+      ]
+    },
+    {
+      "id": 1024,
+      "sku": "H&M-LEG-1024",
+      "name": "H&M Printed Leggings",
+      "brand": "H&M",
+      "category": "Women's Clothing",
+      "subCategory": "Leggings",
+      "description": "H&M Printed Leggings - premium quality leggings from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 4649,
+      "discountPercent": 0,
+      "discountedPrice": 4649,
+      "currency": "INR",
+      "rating": 4.4,
+      "reviewCount": 4555,
+      "inStock": true,
+      "stockQuantity": 76,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "White",
+        "Navy Blue",
+        "Red"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?leggings,h&m"
+      ],
+      "isFeatured": true,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "leggings",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1025,
+      "sku": "H&M-TOP-1025",
+      "name": "H&M Peplum Tops",
+      "brand": "H&M",
+      "category": "Women's Clothing",
+      "subCategory": "Tops",
+      "description": "H&M Peplum Tops - premium quality tops from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2649,
+      "discountPercent": 20,
+      "discountedPrice": 2119,
+      "currency": "INR",
+      "rating": 4.4,
+      "reviewCount": 2174,
+      "inStock": true,
+      "stockQuantity": 129,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Red",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?tops,h&m"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "tops",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1026,
+      "sku": "H&M-KUR-1026",
+      "name": "H&M A-Line Kurtis",
+      "brand": "H&M",
+      "category": "Women's Clothing",
+      "subCategory": "Kurtis",
+      "description": "H&M A-Line Kurtis - premium quality kurtis from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 4549,
+      "discountPercent": 25,
+      "discountedPrice": 3412,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 3631,
+      "inStock": true,
+      "stockQuantity": 141,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Maroon",
+        "Khaki",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?kurtis,h&m"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "kurtis",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1027,
+      "sku": "LEV-DRE-1027",
+      "name": "Levi's Wrap Dresses",
+      "brand": "Levi's",
+      "category": "Women's Clothing",
+      "subCategory": "Dresses",
+      "description": "Levi's Wrap Dresses - premium quality dresses from Levi's, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2849,
+      "discountPercent": 15,
+      "discountedPrice": 2422,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 354,
+      "inStock": true,
+      "stockQuantity": 78,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Black",
+        "Olive"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?dresses,levi's"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "dresses",
+        "levi's"
+      ]
+    },
+    {
+      "id": 1028,
+      "sku": "H&M-SAR-1028",
+      "name": "H&M Cotton Sarees",
+      "brand": "H&M",
+      "category": "Women's Clothing",
+      "subCategory": "Sarees",
+      "description": "H&M Cotton Sarees - premium quality sarees from H&M, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1999,
+      "discountPercent": 15,
+      "discountedPrice": 1699,
+      "currency": "INR",
+      "rating": 4.9,
+      "reviewCount": 1462,
+      "inStock": true,
+      "stockQuantity": 225,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Black",
+        "Navy Blue"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sarees,h&m"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "sarees",
+        "h&m"
+      ]
+    },
+    {
+      "id": 1029,
+      "sku": "LEV-LEG-1029",
+      "name": "Levi's Ankle Length Leggings",
+      "brand": "Levi's",
+      "category": "Women's Clothing",
+      "subCategory": "Leggings",
+      "description": "Levi's Ankle Length Leggings - premium quality leggings from Levi's, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2199,
+      "discountPercent": 15,
+      "discountedPrice": 1869,
+      "currency": "INR",
+      "rating": 4.6,
+      "reviewCount": 897,
+      "inStock": true,
+      "stockQuantity": 97,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?leggings,levi's"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "leggings",
+        "levi's"
+      ]
+    },
+    {
+      "id": 1030,
+      "sku": "ZAR-TOP-1030",
+      "name": "Zara Peplum Tops",
+      "brand": "Zara",
+      "category": "Women's Clothing",
+      "subCategory": "Tops",
+      "description": "Zara Peplum Tops - premium quality tops from Zara, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 649,
+      "discountPercent": 20,
+      "discountedPrice": 519,
+      "currency": "INR",
+      "rating": 4.0,
+      "reviewCount": 2294,
+      "inStock": true,
+      "stockQuantity": 221,
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "availableColors": [
+        "Red"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?tops,zara"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "women clothing",
+        "tops",
+        "zara"
+      ]
+    },
+    {
+      "id": 1031,
+      "sku": "ADI-SUN-1031",
+      "name": "Adidas Aviator Sunglasses",
+      "brand": "Adidas",
+      "category": "Accessories",
+      "subCategory": "Sunglasses",
+      "description": "Adidas Aviator Sunglasses - premium quality sunglasses from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 999,
+      "discountPercent": 25,
+      "discountedPrice": 749,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 2186,
+      "inStock": true,
+      "stockQuantity": 9,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Sky Blue"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sunglasses,adidas"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "sunglasses",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1032,
+      "sku": "SKE-SUN-1032",
+      "name": "Skechers Aviator Sunglasses",
+      "brand": "Skechers",
+      "category": "Accessories",
+      "subCategory": "Sunglasses",
+      "description": "Skechers Aviator Sunglasses - premium quality sunglasses from Skechers, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2749,
+      "discountPercent": 20,
+      "discountedPrice": 2199,
+      "currency": "INR",
+      "rating": 3.8,
+      "reviewCount": 3584,
+      "inStock": false,
+      "stockQuantity": 0,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Khaki",
+        "Grey",
+        "Olive"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sunglasses,skechers"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "sunglasses",
+        "skechers"
+      ]
+    },
+    {
+      "id": 1033,
+      "sku": "ADI-SUN-1033",
+      "name": "Adidas Round Frame Sunglasses",
+      "brand": "Adidas",
+      "category": "Accessories",
+      "subCategory": "Sunglasses",
+      "description": "Adidas Round Frame Sunglasses - premium quality sunglasses from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5699,
+      "discountPercent": 10,
+      "discountedPrice": 5129,
+      "currency": "INR",
+      "rating": 4.5,
+      "reviewCount": 2472,
+      "inStock": true,
+      "stockQuantity": 129,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Maroon",
+        "Olive"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sunglasses,adidas"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "sunglasses",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1034,
+      "sku": "WOO-CAP-1034",
+      "name": "Woodland Trucker Caps",
+      "brand": "Woodland",
+      "category": "Accessories",
+      "subCategory": "Caps",
+      "description": "Woodland Trucker Caps - premium quality caps from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5049,
+      "discountPercent": 15,
+      "discountedPrice": 4292,
+      "currency": "INR",
+      "rating": 4.3,
+      "reviewCount": 2477,
+      "inStock": true,
+      "stockQuantity": 103,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Black",
+        "Red",
+        "Khaki"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?caps,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "caps",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1035,
+      "sku": "WOO-WAL-1035",
+      "name": "Woodland Card Holder Wallets",
+      "brand": "Woodland",
+      "category": "Accessories",
+      "subCategory": "Wallets",
+      "description": "Woodland Card Holder Wallets - premium quality wallets from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3099,
+      "discountPercent": 20,
+      "discountedPrice": 2479,
+      "currency": "INR",
+      "rating": 4.2,
+      "reviewCount": 1402,
+      "inStock": true,
+      "stockQuantity": 168,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Red"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?wallets,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "wallets",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1036,
+      "sku": "ADI-BEL-1036",
+      "name": "Adidas Leather Formal Belts",
+      "brand": "Adidas",
+      "category": "Accessories",
+      "subCategory": "Belts",
+      "description": "Adidas Leather Formal Belts - premium quality belts from Adidas, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5449,
+      "discountPercent": 20,
+      "discountedPrice": 4359,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 390,
+      "inStock": true,
+      "stockQuantity": 62,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Sky Blue",
+        "White"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?belts,adidas"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "belts",
+        "adidas"
+      ]
+    },
+    {
+      "id": 1037,
+      "sku": "WOO-WAT-1037",
+      "name": "Woodland Analog Watches",
+      "brand": "Woodland",
+      "category": "Accessories",
+      "subCategory": "Watches",
+      "description": "Woodland Analog Watches - premium quality watches from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2849,
+      "discountPercent": 20,
+      "discountedPrice": 2279,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 57,
+      "inStock": true,
+      "stockQuantity": 228,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?watches,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "watches",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1038,
+      "sku": "PUM-CAP-1038",
+      "name": "Puma Trucker Caps",
+      "brand": "Puma",
+      "category": "Accessories",
+      "subCategory": "Caps",
+      "description": "Puma Trucker Caps - premium quality caps from Puma, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1849,
+      "discountPercent": 10,
+      "discountedPrice": 1664,
+      "currency": "INR",
+      "rating": 4.1,
+      "reviewCount": 3818,
+      "inStock": true,
+      "stockQuantity": 170,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Khaki",
+        "Olive",
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?caps,puma"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "caps",
+        "puma"
+      ]
+    },
+    {
+      "id": 1039,
+      "sku": "WOO-SUN-1039",
+      "name": "Woodland Aviator Sunglasses",
+      "brand": "Woodland",
+      "category": "Accessories",
+      "subCategory": "Sunglasses",
+      "description": "Woodland Aviator Sunglasses - premium quality sunglasses from Woodland, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5049,
+      "discountPercent": 50,
+      "discountedPrice": 2524,
+      "currency": "INR",
+      "rating": 4.1,
+      "reviewCount": 2037,
+      "inStock": true,
+      "stockQuantity": 215,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Red",
+        "Khaki",
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?sunglasses,woodland"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "sunglasses",
+        "woodland"
+      ]
+    },
+    {
+      "id": 1040,
+      "sku": "NIK-WAL-1040",
+      "name": "Nike Card Holder Wallets",
+      "brand": "Nike",
+      "category": "Accessories",
+      "subCategory": "Wallets",
+      "description": "Nike Card Holder Wallets - premium quality wallets from Nike, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2399,
+      "discountPercent": 30,
+      "discountedPrice": 1679,
+      "currency": "INR",
+      "rating": 4.7,
+      "reviewCount": 672,
+      "inStock": true,
+      "stockQuantity": 35,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Grey"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?wallets,nike"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "No warranty",
+      "tags": [
+        "accessories",
+        "wallets",
+        "nike"
+      ]
+    },
+    {
+      "id": 1041,
+      "sku": "MIV-PHO-1041",
+      "name": "Mivi Transparent Phone Cases",
+      "brand": "Mivi",
+      "category": "Electronics",
+      "subCategory": "Phone Cases",
+      "description": "Mivi Transparent Phone Cases - premium quality phone cases from Mivi, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 6449,
+      "discountPercent": 40,
+      "discountedPrice": 3869,
+      "currency": "INR",
+      "rating": 3.5,
+      "reviewCount": 3453,
+      "inStock": true,
+      "stockQuantity": 99,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Black",
+        "Maroon",
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?phone-cases,mivi"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "phone cases",
+        "mivi"
+      ]
+    },
+    {
+      "id": 1042,
+      "sku": "ZEB-PHO-1042",
+      "name": "Zebronics Rugged Armor Phone Cases",
+      "brand": "Zebronics",
+      "category": "Electronics",
+      "subCategory": "Phone Cases",
+      "description": "Zebronics Rugged Armor Phone Cases - premium quality phone cases from Zebronics, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3299,
+      "discountPercent": 50,
+      "discountedPrice": 1650,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 3582,
+      "inStock": true,
+      "stockQuantity": 124,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?phone-cases,zebronics"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "phone cases",
+        "zebronics"
+      ]
+    },
+    {
+      "id": 1043,
+      "sku": "MIV-SMA-1043",
+      "name": "Mivi Fitness Tracker Smartwatches",
+      "brand": "Mivi",
+      "category": "Electronics",
+      "subCategory": "Smartwatches",
+      "description": "Mivi Fitness Tracker Smartwatches - premium quality smartwatches from Mivi, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 799,
+      "discountPercent": 40,
+      "discountedPrice": 479,
+      "currency": "INR",
+      "rating": 4.3,
+      "reviewCount": 234,
+      "inStock": true,
+      "stockQuantity": 21,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Maroon",
+        "Navy Blue",
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?smartwatches,mivi"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "smartwatches",
+        "mivi"
+      ]
+    },
+    {
+      "id": 1044,
+      "sku": "FIR-PHO-1044",
+      "name": "Fire-Boltt Transparent Phone Cases",
+      "brand": "Fire-Boltt",
+      "category": "Electronics",
+      "subCategory": "Phone Cases",
+      "description": "Fire-Boltt Transparent Phone Cases - premium quality phone cases from Fire-Boltt, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5349,
+      "discountPercent": 25,
+      "discountedPrice": 4012,
+      "currency": "INR",
+      "rating": 4.5,
+      "reviewCount": 3465,
+      "inStock": true,
+      "stockQuantity": 64,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Beige"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?phone-cases,fire-boltt"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "phone cases",
+        "fire-boltt"
+      ]
+    },
+    {
+      "id": 1045,
+      "sku": "NOI-POW-1045",
+      "name": "Noise Fast Charge Power Banks",
+      "brand": "Noise",
+      "category": "Electronics",
+      "subCategory": "Power Banks",
+      "description": "Noise Fast Charge Power Banks - premium quality power banks from Noise, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 1349,
+      "discountPercent": 0,
+      "discountedPrice": 1349,
+      "currency": "INR",
+      "rating": 4.5,
+      "reviewCount": 2037,
+      "inStock": true,
+      "stockQuantity": 51,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Sky Blue"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?power-banks,noise"
+      ],
+      "isFeatured": true,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "power banks",
+        "noise"
+      ]
+    },
+    {
+      "id": 1046,
+      "sku": "NOI-NEC-1046",
+      "name": "Noise Wireless Sport Neckband Earphones",
+      "brand": "Noise",
+      "category": "Electronics",
+      "subCategory": "Neckband Earphones",
+      "description": "Noise Wireless Sport Neckband Earphones - premium quality neckband earphones from Noise, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 3749,
+      "discountPercent": 30,
+      "discountedPrice": 2624,
+      "currency": "INR",
+      "rating": 3.7,
+      "reviewCount": 950,
+      "inStock": true,
+      "stockQuantity": 199,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Red"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?neckband-earphones,noise"
+      ],
+      "isFeatured": true,
+      "isNewArrival": true,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "neckband earphones",
+        "noise"
+      ]
+    },
+    {
+      "id": 1047,
+      "sku": "MIV-PHO-1047",
+      "name": "Mivi Rugged Armor Phone Cases",
+      "brand": "Mivi",
+      "category": "Electronics",
+      "subCategory": "Phone Cases",
+      "description": "Mivi Rugged Armor Phone Cases - premium quality phone cases from Mivi, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 2999,
+      "discountPercent": 10,
+      "discountedPrice": 2699,
+      "currency": "INR",
+      "rating": 4.3,
+      "reviewCount": 2001,
+      "inStock": true,
+      "stockQuantity": 26,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Red",
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?phone-cases,mivi"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "phone cases",
+        "mivi"
+      ]
+    },
+    {
+      "id": 1048,
+      "sku": "FIR-NEC-1048",
+      "name": "Fire-Boltt Bassheads Neckband Earphones",
+      "brand": "Fire-Boltt",
+      "category": "Electronics",
+      "subCategory": "Neckband Earphones",
+      "description": "Fire-Boltt Bassheads Neckband Earphones - premium quality neckband earphones from Fire-Boltt, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5849,
+      "discountPercent": 50,
+      "discountedPrice": 2924,
+      "currency": "INR",
+      "rating": 3.6,
+      "reviewCount": 2979,
+      "inStock": true,
+      "stockQuantity": 162,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Navy Blue",
+        "Maroon"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?neckband-earphones,fire-boltt"
+      ],
+      "isFeatured": true,
+      "isNewArrival": false,
+      "freeDelivery": true,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "neckband earphones",
+        "fire-boltt"
+      ]
+    },
+    {
+      "id": 1049,
+      "sku": "ZEB-NEC-1049",
+      "name": "Zebronics Wireless Sport Neckband Earphones",
+      "brand": "Zebronics",
+      "category": "Electronics",
+      "subCategory": "Neckband Earphones",
+      "description": "Zebronics Wireless Sport Neckband Earphones - premium quality neckband earphones from Zebronics, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 6449,
+      "discountPercent": 40,
+      "discountedPrice": 3869,
+      "currency": "INR",
+      "rating": 4.6,
+      "reviewCount": 2210,
+      "inStock": true,
+      "stockQuantity": 82,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "White"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?neckband-earphones,zebronics"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "neckband earphones",
+        "zebronics"
+      ]
+    },
+    {
+      "id": 1050,
+      "sku": "ZEB-NEC-1050",
+      "name": "Zebronics Rockerz Neckband Earphones",
+      "brand": "Zebronics",
+      "category": "Electronics",
+      "subCategory": "Neckband Earphones",
+      "description": "Zebronics Rockerz Neckband Earphones - premium quality neckband earphones from Zebronics, designed for everyday comfort and durability. Ideal for casual and active use.",
+      "price": 5349,
+      "discountPercent": 30,
+      "discountedPrice": 3744,
+      "currency": "INR",
+      "rating": 3.4,
+      "reviewCount": 2674,
+      "inStock": true,
+      "stockQuantity": 46,
+      "availableSizes": [
+        "Free Size"
+      ],
+      "availableColors": [
+        "Grey",
+        "Olive"
+      ],
+      "images": [
+        "https://source.unsplash.com/400x400/?neckband-earphones,zebronics"
+      ],
+      "isFeatured": false,
+      "isNewArrival": false,
+      "freeDelivery": false,
+      "returnPolicy": "7 days easy return",
+      "warranty": "6 months manufacturer warranty",
+      "tags": [
+        "electronics",
+        "neckband earphones",
+        "zebronics"
+      ]
+    }
+  ]
+}
