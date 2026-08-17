@@ -14,7 +14,7 @@ function BrandCarousel() {
   const duplicated = [...brandLogo, ...brandLogo];
 
   return (
-    <div className="w-full overflow-hidden bg-white py-10">
+    <div className="w-full overflow-hidden bg-white py-10 sm:block hidden">
      
       <div className="relative">
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10" />

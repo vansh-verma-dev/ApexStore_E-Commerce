@@ -19,11 +19,13 @@ function Hero() {
     }, []);
 
     return (
-        <div className="bg-red-600 h-[70vh]">
+        <div className="sm:h-[70vh] h-[25vh] sm:m-0 m-4  ">
             <img src={banner[current_Banner]} alt="APEXSTORE"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover sm:rounded-none rounded-2xl"
             />
         </div>
+
+        
     )
 }
 export default Hero;
