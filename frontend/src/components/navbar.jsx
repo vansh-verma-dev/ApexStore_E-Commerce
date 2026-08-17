@@ -4,13 +4,23 @@ import { FaSearch, FaRegUserCircle } from "react-icons/fa";
 
 // Categories ko array me rakh diya - ab yahi se aage dropdown/menu bhi banega
 const categories = [
-    { label: "All", value: "all" },
-    { label: "Men", value: "men" },
-    { label: "Women", value: "women" },
-    { label: "Kids", value: "kids" },
-    { label: "Shoes", value: "shoes" },
-    { label: "Electronics", value: "electronics" },
-    { label: "Beauty", value: "beauty" },
+  { label: "All", value: "all" },
+  { label: "Men", value: "men" },
+  { label: "Women", value: "women" },
+  { label: "Kids", value: "kids" },
+  { label: "Shoes", value: "shoes" },
+  { label: "Electronics", value: "electronics" },
+  { label: "Beauty", value: "beauty" },
+  { label: "Jewellery", value: "jewellery" },
+  { label: "Watches", value: "watches" },
+  { label: "Bags", value: "bags" },
+  { label: "Sports", value: "sports" },
+  { label: "Home & Living", value: "home-living" },
+  { label: "Grocery", value: "grocery" },
+  { label: "Toys", value: "toys" },
+  { label: "Mobiles", value: "mobiles" },
+  { label: "Laptops", value: "laptops" },
+  { label: "Accessories", value: "accessories" },
 ];
 
 function Navbar() {
