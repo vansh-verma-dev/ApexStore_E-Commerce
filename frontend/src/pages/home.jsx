@@ -1,4 +1,5 @@
  
+import BottomNav from "../components/bottomNav";
 import BrandCarousel from "../components/brand_carousel";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
@@ -13,6 +14,7 @@ function HomePage(){
         <BrandCarousel/>
         <ProductPage/>
         <Footer/>
+        <BottomNav/>
         </>
     )
 }
