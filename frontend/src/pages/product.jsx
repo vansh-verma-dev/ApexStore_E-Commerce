@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import productData from "../data/product.json";
 
+
 function ProductPage() {
+
+    const navigate = useNavigate();
+
+    const handelProductView = (id) => {
+        navigate(`/ProductView/${id}`);
+    };
+
+
     return (
         <div className="min-h-screen bg-white px-6 py-10 md:px-10 lg:px-16">
 
@@ -39,7 +49,7 @@ function ProductPage() {
                         <div className="relative aspect-square overflow-hidden bg-gray-100">
 
                             <img
-                                src={product.images}
+                                src={product.images[0]}
                                 alt={product.name}
                                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                             />
@@ -91,9 +101,10 @@ function ProductPage() {
                                 </div>
 
                                 <button
+                                    onClick={() => handelProductView(product.id)}
                                     className="rounded-xl bg-black px-4 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-gray-800 active:scale-95"
                                 >
-                                    Add to Cart
+                                    View Product
                                 </button>
 
                             </div>

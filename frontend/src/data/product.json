@@ -33,7 +33,9 @@
         "Maroon"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/97/01/3d/97013de8f52e70f1dd23183ab4479dc7.jpg"
+        "https://i.pinimg.com/1200x/97/01/3d/97013de8f52e70f1dd23183ab4479dc7.jpg",
+        "https://i.pinimg.com/1200x/97/01/3d/97013de8f52e70f1dd23183ab4479dc7.jpg",
+        "https://i.pinimg.com/736x/f3/c6/88/f3c6883a105fb06145e63a4e09c0d974.jpg"
       ],
       "isFeatured": true,
       "isNewArrival": true,
@@ -74,7 +76,7 @@
         "Navy Blue"
       ],
       "images": [
-      "https://i.pinimg.com/736x/f3/c6/88/f3c6883a105fb06145e63a4e09c0d974.jpg"
+        "https://i.pinimg.com/736x/f3/c6/88/f3c6883a105fb06145e63a4e09c0d974.jpg"
       ],
       "isFeatured": false,
       "isNewArrival": false,
@@ -116,7 +118,7 @@
         "Beige"
       ],
       "images": [
-       "https://i.pinimg.com/1200x/d1/0c/f0/d10cf00abed95fb0d54d5a0727c60a11.jpg"
+        "https://i.pinimg.com/1200x/d1/0c/f0/d10cf00abed95fb0d54d5a0727c60a11.jpg"
       ],
       "isFeatured": false,
       "isNewArrival": false,
@@ -157,7 +159,7 @@
         "Red"
       ],
       "images": [
-       "https://i.pinimg.com/1200x/90/a3/8c/90a38c4c673286ac4c4485e85d641dab.jpg"
+        "https://i.pinimg.com/1200x/90/a3/8c/90a38c4c673286ac4c4485e85d641dab.jpg"
       ],
       "isFeatured": false,
       "isNewArrival": false,
@@ -671,6 +673,6 @@
         "t-shirts",
         "adidas"
       ]
-    } 
+    }
   ]
 }
