@@ -10,12 +10,7 @@ import { useState } from "react";
 import MobileNavbar from "../components/mobileTopNav";
 import BottomNav from "../components/bottomNav";
 
-/**
- * Design direction: quiet editorial boutique.
- * Palette — paper #FAF7F2, ink #201A17, wine #7A2E2E (accent), sage #6B7A5E (stock/trust)
- * Type — serif display (Fraunces/Playfair) for product name, sans body for everything else
- * Signature — the "swatch rail" thumbnail strip + stitched divider on the trust bar
- */
+ 
 function ProductView() {
     const { id } = useParams();
 
@@ -31,7 +26,7 @@ function ProductView() {
     if (!product) {
         return (
             <div className="flex h-[60vh] w-full items-center justify-center bg-[#FAF7F2]">
-                <p className="font-serif text-2xl text-[#201A17]">Product not found.</p>
+                <p className=" text-2xl text-[#201A17]">Product not found.</p>
             </div>
         );
     }
@@ -46,7 +41,7 @@ function ProductView() {
     const increment = () => setCount((c) => Math.min(stock, c + 1));
 
     return (
-        <div className="w-full bg-[#FAF7F2] font-sans text-[#201A17]">
+        <div className="w-full bg-[#FAF7F2]   text-[#201A17]">
             <div className="mx-auto max-w-6xl px-5 py-6 sm:px-8">
 
                 {/* Breadcrumb */}
@@ -113,7 +108,7 @@ function ProductView() {
                             <span>{product.subCategory}</span>
                         </div>
 
-                        <h1 className="mt-2 font-serif text-4xl leading-tight text-[#201A17] sm:text-5xl">
+                        <h1 className="mt-2   text-4xl leading-tight text-[#201A17] sm:text-5xl">
                             {product.name}
                         </h1>
 
@@ -137,7 +132,7 @@ function ProductView() {
                         <div className="my-6 h-px bg-[#e3dcd1]" />
 
                         <div className="flex flex-wrap items-baseline gap-3">
-                            <span className="flex items-center font-serif text-3xl">
+                            <span className="flex items-center   text-3xl">
                                 <LiaRupeeSignSolid />{product.discountedPrice}
                             </span>
                             {savings > 0 && (
