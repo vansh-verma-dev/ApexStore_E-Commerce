@@ -76,12 +76,12 @@ function Navbar() {
 
                 {/* Cart & Account - hamesha visible */}
                 <div className="flex items-center gap-5">
-                    <Link to={"#"} className="flex flex-col items-center text-xs hover:text-orange-300 transition-colors">
+                    <Link to={"/cartpage"} className="flex flex-col items-center text-xs hover:text-orange-300 transition-colors">
                         <FaCartShopping className="text-xl" />
                         <span>Cart</span>
                     </Link>
 
-                    <Link to={"#"} className="flex flex-col items-center text-xs hover:text-orange-300 transition-colors">
+                    <Link to={"/SigninPage"} className="flex flex-col items-center text-xs hover:text-orange-300 transition-colors">
                         <FaRegUserCircle className="text-xl" />
                         <span>Account</span>
                     </Link>
