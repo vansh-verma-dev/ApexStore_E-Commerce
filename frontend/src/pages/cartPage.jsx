@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { FaRupeeSign, FaArrowRight } from "react-icons/fa";
+import { FaRupeeSign, FaArrowRight ,FaArrowLeft } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 import { TbTag, TbTruck } from "react-icons/tb";
 
 import Footer from "../components/footer";
+import BottomNav from "../components/bottomNav";
+import { Link } from "react-router-dom";
 
 const rawItems = [
     {
@@ -99,10 +101,16 @@ function CartPage() {
         <div className="bg-neutral-50 min-h-screen">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
                 {/* Header */}
-                <div className="flex items-baseline justify-between border-b border-neutral-200 pb-5 mb-8">
-                    <h1 className="text-3xl font-semibold text-neutral-900 tracking-tight">
-                        Your Cart
+                <div className="flex items-baseline   justify-between border-b border-neutral-200 pb-5 mb-8">
+                   <Link to={"/"}>
+
+               
+                    <h1 className="text-3xl flex gap-0.5 items-center  font-semibold text-neutral-900 tracking-tight">
+                        <FaArrowLeft
+                        className="sm:hidden block"
+                        /> Your Cart
                     </h1>
+                   </Link>
                     <span className="text-sm text-neutral-500">
                         {items.length} {items.length === 1 ? "item" : "items"}
                     </span>
@@ -274,6 +282,7 @@ function CartPage() {
             </div>
 
             <Footer />
+            <BottomNav/>
         </div>
     );
 }

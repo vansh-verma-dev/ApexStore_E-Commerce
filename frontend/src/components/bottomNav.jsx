@@ -12,17 +12,17 @@ function BottomNav() {
         },
         {
             name: "Products",
-            path: "/Products",
+            path: "/ProductPage",
             icon: TbCategory,
         },
         {
             name: "Cart",
-            path: "/Cart",
+            path: "/cartpage",
             icon: IoCartOutline,
         },
         {
             name: "Account",
-            path: "/Account",
+            path: "/SigninPage",
             icon: FaRegCircleUser,
         },
     ];
