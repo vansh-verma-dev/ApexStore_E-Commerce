@@ -205,7 +205,7 @@ function CartPage() {
                                         Add <span className="text-neutral-900">₹{remaining}</span> more for free shipping
                                     </p>
                                 ) : (
-                                    <p className="text-neutral-900">You've unlocked free shipping 🎉</p>
+                                    <p className="text-neutral-900">You've unlocked free shipping </p>
                                 )}
                             </div>
                             <div className="h-1.5 w-full bg-neutral-100 rounded-full overflow-hidden mb-6">

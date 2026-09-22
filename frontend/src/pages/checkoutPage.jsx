@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileTopNav";
 import BottomNav from "../components/bottomNav";
+import PayBtn from "../components/PayBtn";
 
 // TODO: replace this with your actual cart state (Context / Redux / localStorage)
 const cartItems = [
@@ -235,13 +236,17 @@ function Checkout() {
                             </div>
                         </div>
 
-                        <button
+                        {/* <button
                             type="submit"
                             disabled={placing}
                             className="mt-5 w-full rounded-xl bg-black px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-gray-800 active:scale-95 disabled:opacity-60"
                         >
                             {placing ? "Placing Order..." : `Place Order · ₹${total}`}
-                        </button>
+                        </button> */}
+
+                        <div className="bg-[#1a1a1a] flex justify-center ">
+                            <PayBtn/>
+                        </div>
                     </div>
                 </div>
             </form>
