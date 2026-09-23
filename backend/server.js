@@ -18,6 +18,9 @@ app.use(express.json());
 
 app.use(loggerMid);
 
+app.get("/" , (req , res)=>{
+   res.send("Apex Store Running...")
+})
 
 // ==================================================
 // Product Routes
